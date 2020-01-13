@@ -1,6 +1,8 @@
 :root {
-  --black: #181818;
+  --bg-black: #181818;
+  --black: #222;
   --yellow: #FABB03;
+  --grey: #F3F3F3; 
 }
 
 @font-face {
@@ -171,12 +173,12 @@ html {
 body {
   font-family: 'BigCityGrotesquePro', serif;
   line-height: 1.5;
+  color: var(--black);
 }
 
 .app {
   display: flex;
   width: 100%;
-  background-color: var(--black);
 }
 
 .btn {
@@ -194,6 +196,28 @@ body {
   opacity: 1;
 }
 
+.scroll-box::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background-color: rgba(55, 55, 55, .23);
+  border-radius: 2px;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgba(55, 55, 55, .23);
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #373737;
+}
+
+.title_h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
 .sidebar {
   width: 210px;
   flex-shrink: 0;
@@ -207,6 +231,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--bg-black);
 }
 
 .sidebar__footer {
@@ -251,6 +276,8 @@ body {
 
 .main {
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .main__header {
@@ -262,6 +289,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   padding: 58px 54px;
+  background-color: var(--bg-black);
 }
 
 .main-header__title {
@@ -278,4 +306,39 @@ body {
 .main-header__more {
   margin-top: 22.5vh;
   line-height: 35px;
+}
+
+.main__section {
+  padding: 55px 60px;
+}
+
+.competencies-section {
+  background-color: var(--grey);
+}
+
+.competencies {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.competencies__box {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.competencies__item {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.competencies__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.competencies__icon {
+  margin-bottom: 25px;
+}
+
+.competencies__title {
+  font-weight: 900;
 }
