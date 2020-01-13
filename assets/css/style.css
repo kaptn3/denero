@@ -310,6 +310,10 @@ body {
   padding: 55px 60px;
 }
 
+.main__section_black {
+  background-color: var(--bg-black);
+}
+
 .competencies-section {
   background-color: var(--grey);
   padding-bottom: 4.5rem;
@@ -436,16 +440,39 @@ body {
   border-radius: 14px 14px 6px 6px;
   overflow: hidden;
   border: 2px solid #344248;
+  border-bottom: none;
+  padding: 3px 2px 3px 2px;
 }
 
 .macbook__screen {
   border-radius: 14px 14px 6px 6px;
   display: block;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .macbook__screen img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.numbers {
+  background: #272727;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  color: #C4C4C4;
+  display: flex;
+}
+
+.numbers__item {
+  width: 20%;
+  flex-shrink: 0;
+  margin-right: 2%;
+}
+
+.numbers__title {
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 11px;
 }
