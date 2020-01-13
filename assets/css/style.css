@@ -2,7 +2,9 @@
   --bg-black: #181818;
   --black: #222;
   --yellow: #FABB03;
-  --grey: #F3F3F3; 
+  --grey: #F3F3F3;
+  --grey-text: #4A4A4A;
+  --blue: #3D73C4;
 }
 
 @font-face {
@@ -92,7 +94,7 @@
 @font-face {
   font-family: 'BigCityGrotesquePro';
   src: url('../fonts/BigCityGrotesquePro-Bold.woff2') format('woff2');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -120,7 +122,7 @@
 @font-face {
   font-family: 'BigCityGrotesquePro-BoldIt';
   src: url('../fonts/BigCityGrotesquePro-BoldIt.woff2') format('woff2');
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -141,11 +143,6 @@
 a {
   color: inherit;
   text-decoration: none;
-}
-
-a:active,
-a:visited {
-  color: inherit;
 }
 
 img {
@@ -179,6 +176,7 @@ body {
 .app {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .btn {
@@ -314,6 +312,7 @@ body {
 
 .competencies-section {
   background-color: var(--grey);
+  padding-bottom: 4.5rem;
 }
 
 .competencies {
@@ -324,6 +323,11 @@ body {
 .competencies__box {
   display: flex;
   padding-bottom: 2rem;
+}
+
+.competencies__title {
+  font-size: 1rem;
+  margin-bottom: .5rem;
 }
 
 .competencies__item {
@@ -341,4 +345,107 @@ body {
 
 .competencies__title {
   font-weight: 900;
+}
+
+.results__item {
+  color: var(--grey-text);
+  line-height: 26px;
+  display: flex;
+}
+
+.results__all-text {
+  flex-shrink: 0;
+  width: 300px;
+  margin-right: 50px;
+}
+
+.results__title {
+  margin-bottom: .2rem;
+  font-size: 1rem;
+}
+
+.results__text {
+  margin-bottom: 1rem;
+}
+
+.results__title,
+.results__text_bold {
+  font-weight: 700;
+}
+
+.results__quote {
+  background: url(../img/icons/quotes.svg) no-repeat top left;
+  padding-left: 36px;
+  width: 336px;
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+
+.results__quote-author {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.results__quote-author-img {
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 8px;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.results__quote-author-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.results__quote-author-name {
+  font-weight: 500;
+}
+
+.results__quote-author-job {
+  line-height: 1.5;
+}
+
+.results__quote-link {
+  color: var(--blue);
+}
+
+.results__quote-link span {
+  margin-left: 7px;
+}
+
+.macbook {
+  width: 465px;
+  height: 268px;
+  flex-shrink: 0;
+  background: url(../img/macbook.png) no-repeat center bottom;
+  background-size: contain;
+}
+
+.macbook__top {
+  height: 254px;
+  width: 378px;
+  margin: 0 auto;
+  background-color: #060914;
+  border-radius: 14px 14px 6px 6px;
+  overflow: hidden;
+  border: 2px solid #344248;
+}
+
+.macbook__screen {
+  border-radius: 14px 14px 6px 6px;
+  display: block;
+  overflow: hidden;
+}
+
+.macbook__screen img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
