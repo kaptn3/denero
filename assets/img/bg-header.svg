@@ -1,311 +1,493 @@
-<svg width="1089" height="780" viewBox="0 0 1089 780" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
+<svg width="1080" height="772" viewBox="0 0 1080 772" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
-<rect x="5" y="3" width="1080" height="772" fill="#181818"/>
+<path d="M1080 0H0V772H1080V0Z" fill="#181818"/>
 <g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M75.0147 89.4783C432.433 -142.475 591.731 451.203 1062.28 -220" stroke="#0C033E" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M70.0147 86.4783C427.433 -145.475 586.731 448.203 1057.28 -223" stroke="#0C033E" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M77.221 99.383C447.008 -145.89 606.142 448.457 1066.89 -202.502" stroke="#140B44" stroke-width="1.06" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M72.221 96.383C442.008 -148.89 601.142 445.457 1061.89 -205.502" stroke="#140B44" stroke-width="1.06" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M79.4156 109.3C461.584 -149.293 620.542 445.711 1071.52 -185.051" stroke="#1C134A" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M74.4156 106.3C456.584 -152.293 615.542 442.711 1066.52 -188.051" stroke="#1C134A" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M81.6219 119.158C476.171 -152.743 634.965 442.918 1076.14 -167.648" stroke="#241B51" stroke-width="1.19" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M76.6219 116.158C471.171 -155.743 629.965 439.918 1071.14 -170.648" stroke="#241B51" stroke-width="1.19" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M83.8165 129.121C490.747 -156.053 649.364 440.231 1080.75 -150.185" stroke="#2B2457" stroke-width="1.26" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M78.8165 126.121C485.747 -159.053 644.364 437.231 1075.75 -153.185" stroke="#2B2457" stroke-width="1.26" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M86.0109 139.026C505.322 -159.504 663.776 437.472 1085.36 -132.7" stroke="#332C5D" stroke-width="1.32" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M81.0109 136.026C500.322 -162.504 658.776 434.472 1080.36 -135.7" stroke="#332C5D" stroke-width="1.32" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M88.2172 148.943C519.91 -162.906 678.222 434.727 1089.99 -115.237" stroke="#3B3463" stroke-width="1.39" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M83.2172 145.943C514.91 -165.906 673.222 431.727 1084.99 -118.237" stroke="#3B3463" stroke-width="1.39" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M90.4117 158.847C534.485 -166.31 692.598 431.992 1094.6 -97.7861" stroke="#433C6A" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M85.4117 155.847C529.485 -169.31 687.598 428.992 1089.6 -100.786" stroke="#433C6A" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M92.618 168.764C549.061 -169.713 707.01 429.246 1099.22 -80.3468" stroke="#4B4470" stroke-width="1.52" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M87.618 165.764C544.061 -172.713 702.01 426.246 1094.22 -83.3468" stroke="#4B4470" stroke-width="1.52" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M94.8126 178.669C563.636 -173.058 721.421 426.5 1103.84 -62.8842" stroke="#534C76" stroke-width="1.58" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M89.8126 175.669C558.636 -176.058 716.421 423.5 1098.84 -65.8842" stroke="#534C76" stroke-width="1.58" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M97.0071 188.585C578.165 -176.508 735.832 423.754 1108.46 -45.4219" stroke="#5A547C" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M92.0071 185.585C573.165 -179.508 730.832 420.754 1103.46 -48.4219" stroke="#5A547C" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M99.2017 198.49C592.799 -179.923 750.232 421.008 1113.07 -28.0062" stroke="#625C82" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M94.2017 195.49C587.799 -182.923 745.232 418.008 1108.07 -31.0062" stroke="#625C82" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M101.396 208.348C607.375 -183.385 764.643 418.203 1117.7 -10.5789" stroke="#6A6589" stroke-width="1.77" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M96.396 205.348C602.375 -186.385 759.643 415.203 1112.7 -13.5789" stroke="#6A6589" stroke-width="1.77" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M103.603 218.312C621.962 -186.729 779.054 415.469 1122.25 6.93073" stroke="#726D8F" stroke-width="1.84" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M98.603 215.312C616.962 -189.729 774.054 412.469 1117.25 3.93073" stroke="#726D8F" stroke-width="1.84" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M105.797 228.228C636.538 -190.133 793.501 412.781 1126.92 24.3812" stroke="#7A7595" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M100.797 225.228C631.538 -193.133 788.501 409.781 1121.92 21.3812" stroke="#7A7595" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M107.992 238.132C651.113 -193.537 807.877 410.023 1131.54 41.8316" stroke="#827D9B" stroke-width="1.97" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M102.992 235.132C646.113 -196.537 802.877 407.023 1126.54 38.8316" stroke="#827D9B" stroke-width="1.97" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M110.221 248.049C665.7 -196.94 822.288 407.277 1136.16 59.306" stroke="#8985A2" stroke-width="2.03" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M105.221 245.049C660.7 -199.94 817.288 404.277 1131.16 56.306" stroke="#8985A2" stroke-width="2.03" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M112.392 257.954C680.276 -200.343 836.652 404.543 1140.77 76.7336" stroke="#918DA8" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M107.392 254.954C675.276 -203.343 831.652 401.543 1135.77 73.7336" stroke="#918DA8" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M114.587 267.871C694.851 -203.746 851.099 401.797 1145.39 94.1844" stroke="#9995AE" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M109.587 264.871C689.851 -206.746 846.099 398.797 1140.39 91.1844" stroke="#9995AE" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M116.793 277.775C709.427 -207.15 865.51 399.05 1149.99 111.647" stroke="#A19DB4" stroke-width="2.23" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M111.793 274.775C704.427 -210.15 860.51 396.05 1144.99 108.647" stroke="#A19DB4" stroke-width="2.23" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M118.988 287.692C723.991 -210.611 879.921 396.305 1154.63 129.098" stroke="#A9A6BB" stroke-width="2.29" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M113.988 284.692C718.991 -213.611 874.921 393.305 1149.63 126.098" stroke="#A9A6BB" stroke-width="2.29" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M121.182 297.597C738.59 -213.956 894.332 393.558 1159.24 146.548" stroke="#B1AEC1" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M116.182 294.597C733.59 -216.956 889.332 390.558 1154.24 143.548" stroke="#B1AEC1" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M123.389 307.513C753.177 -217.36 908.744 390.836 1163.86 164.011" stroke="#B8B6C7" stroke-width="2.42" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M118.389 304.513C748.177 -220.36 903.744 387.836 1158.86 161.011" stroke="#B8B6C7" stroke-width="2.42" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M125.583 317.418C767.753 -220.775 923.155 388.066 1168.47 181.45" stroke="#C0BECD" stroke-width="2.48" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M120.583 314.418C762.753 -223.775 918.155 385.066 1163.47 178.45" stroke="#C0BECD" stroke-width="2.48" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M127.825 327.335C782.328 -224.178 937.578 385.32 1173.09 198.96" stroke="#C8C6D3" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M122.825 324.335C777.328 -227.178 932.578 382.32 1168.09 195.96" stroke="#C8C6D3" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M129.984 337.239C796.916 -227.582 951.977 382.573 1177.71 216.363" stroke="#D0CEDA" stroke-width="2.61" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M124.984 334.239C791.916 -230.582 946.977 379.573 1172.71 213.363" stroke="#D0CEDA" stroke-width="2.61" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M132.178 347.156C811.491 -230.973 966.389 379.839 1182.32 233.814" stroke="#D8D6E0" stroke-width="2.68" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M127.178 344.156C806.491 -233.973 961.389 376.839 1177.32 230.814" stroke="#D8D6E0" stroke-width="2.68" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M134.373 357.061C826.067 -234.411 980.788 377.093 1186.95 251.265" stroke="#E0DEE6" stroke-width="2.74" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M129.373 354.061C821.067 -237.411 975.788 374.093 1181.95 248.265" stroke="#E0DEE6" stroke-width="2.74" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M136.568 366.977C840.642 -237.779 995.199 374.347 1191.59 268.727" stroke="#E7E7EC" stroke-width="2.81" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M131.568 363.977C835.642 -240.779 990.199 371.347 1186.59 265.727" stroke="#E7E7EC" stroke-width="2.81" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M138.774 376.882C855.229 -241.194 1009.61 371.601 1196.15 286.166" stroke="#EFEFF3" stroke-width="2.87" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M133.774 373.882C850.229 -244.194 1004.61 368.601 1191.15 283.166" stroke="#EFEFF3" stroke-width="2.87" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M140.969 386.799C869.746 -244.574 1024.02 368.855 1200.79 303.629" stroke="#F7F7F9" stroke-width="2.94" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M135.969 383.799C864.746 -247.574 1019.02 365.855 1195.79 300.629" stroke="#F7F7F9" stroke-width="2.94" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M143.163 396.703C884.38 -248.001 1038.42 366.109 1205.41 321.079" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M138.163 393.703C879.38 -251.001 1033.42 363.109 1200.41 318.079" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-28 156.829C328.491 -22.7253 366.315 1005.31 1151.36 109.3" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-33 153.829C323.491 -25.7253 361.315 1002.31 1146.36 106.3" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-27.0846 171.299C340.966 -36.6905 388.166 995.546 1154.42 128.088" stroke="#FEFEFF" stroke-width="0.98" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-32.0846 168.299C335.966 -39.6905 383.166 992.546 1149.42 125.088" stroke="#FEFEFF" stroke-width="0.98" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-26.2045 185.757C353.452 -50.6674 410.029 985.817 1157.47 146.877" stroke="#FDFDFE" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-31.2045 182.757C348.452 -53.6674 405.029 982.817 1152.47 143.877" stroke="#FDFDFE" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-25.3008 200.226C365.927 -64.6452 431.893 976.099 1160.55 165.665" stroke="#FCFDFE" stroke-width="0.93" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-30.3008 197.226C360.927 -67.6452 426.893 973.099 1155.55 162.665" stroke="#FCFDFE" stroke-width="0.93" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-24.4089 214.697C378.414 -78.6217 453.768 966.371 1163.57 184.454" stroke="#FBFCFE" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-29.4089 211.697C373.414 -81.6217 448.768 963.371 1158.57 181.454" stroke="#FBFCFE" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-23.564 229.167C390.83 -92.5988 475.573 956.654 1166.56 203.243" stroke="#FAFBFD" stroke-width="0.88" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-28.564 226.167C385.83 -95.5988 470.573 953.654 1161.56 200.243" stroke="#FAFBFD" stroke-width="0.88" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-22.6016 243.636C403.399 -106.564 497.506 946.924 1169.73 222.031" stroke="#F9FAFD" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-27.6016 240.636C398.399 -109.564 492.506 943.924 1164.73 219.031" stroke="#F9FAFD" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-21.7098 258.106C415.85 -120.541 519.37 937.208 1172.72 240.808" stroke="#F8F9FD" stroke-width="0.83" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-26.7098 255.106C410.85 -123.541 514.37 934.208 1167.72 237.808" stroke="#F8F9FD" stroke-width="0.83" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-20.8061 272.576C428.337 -134.518 541.245 927.479 1175.81 259.597" stroke="#F6F9FC" stroke-width="0.81" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-25.8061 269.576C423.337 -137.518 536.245 924.479 1170.81 256.597" stroke="#F6F9FC" stroke-width="0.81" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-19.9142 287.035C440.812 -148.495 563.108 917.762 1178.83 278.386" stroke="#F5F8FC" stroke-width="0.78" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-24.9142 284.035C435.812 -151.495 558.108 914.762 1173.83 275.386" stroke="#F5F8FC" stroke-width="0.78" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-19.0106 301.505C453.299 -162.496 584.983 908.033 1181.88 297.174" stroke="#F4F7FC" stroke-width="0.76" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-24.0106 298.505C448.299 -165.496 579.983 905.033 1176.88 294.174" stroke="#F4F7FC" stroke-width="0.76" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-18.1071 315.975C465.785 -176.449 606.846 898.316 1184.94 315.975" stroke="#F3F6FB" stroke-width="0.73" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-23.1071 312.975C460.785 -179.449 601.846 895.316 1179.94 312.975" stroke="#F3F6FB" stroke-width="0.73" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-17.2153 330.398C478.26 -190.473 628.71 888.54 1188.03 334.705" stroke="#F2F5FB" stroke-width="0.71" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-22.2153 327.398C473.26 -193.473 623.71 885.54 1183.03 331.705" stroke="#F2F5FB" stroke-width="0.71" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-16.3115 344.914C490.747 -204.392 650.585 878.87 1191.07 353.54" stroke="#F1F5FB" stroke-width="0.69" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-21.3115 341.914C485.747 -207.392 645.585 875.87 1186.07 350.54" stroke="#F1F5FB" stroke-width="0.69" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-15.4077 359.384C503.222 -218.369 672.46 869.153 1194.09 372.293" stroke="#F0F4FA" stroke-width="0.66" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-20.4077 356.384C498.222 -221.369 667.46 866.153 1189.09 369.293" stroke="#F0F4FA" stroke-width="0.66" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-14.5158 373.819C515.697 -232.381 694.312 859.389 1197.13 391.082" stroke="#EFF3FA" stroke-width="0.64" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-19.5158 370.819C510.697 -235.381 689.312 856.389 1192.13 388.082" stroke="#EFF3FA" stroke-width="0.64" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-13.6123 388.313C528.183 -246.323 716.198 849.696 1200.2 409.894" stroke="#EEF2FA" stroke-width="0.61" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-18.6123 385.313C523.183 -249.323 711.198 846.696 1195.2 406.894" stroke="#EEF2FA" stroke-width="0.61" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-12.7085 402.782C540.67 -260.3 738.074 839.978 1203.25 428.694" stroke="#EDF1FA" stroke-width="0.59" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-17.7085 399.782C535.67 -263.3 733.074 836.978 1198.25 425.694" stroke="#EDF1FA" stroke-width="0.59" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-11.8284 417.24C553.145 -274.277 759.925 830.262 1206.32 447.483" stroke="#ECF0F9" stroke-width="0.56" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-16.8284 414.24C548.145 -277.277 754.925 827.262 1201.32 444.483" stroke="#ECF0F9" stroke-width="0.56" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-10.913 431.722C565.631 -288.242 781.8 820.533 1209.35 466.26" stroke="#EBF0F9" stroke-width="0.54" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-15.913 428.722C560.631 -291.242 776.8 817.533 1204.35 463.26" stroke="#EBF0F9" stroke-width="0.54" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-10.0212 446.192C578.106 -302.219 803.663 810.816 1212.39 485.06" stroke="#EAEFF9" stroke-width="0.52" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-15.0212 443.192C573.106 -305.219 798.663 807.816 1207.39 482.06" stroke="#EAEFF9" stroke-width="0.52" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-9.11755 460.662C590.569 -316.232 825.538 801.087 1215.45 503.849" stroke="#E9EEF8" stroke-width="0.49" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-14.1176 457.662C585.569 -319.232 820.538 798.087 1210.45 500.849" stroke="#E9EEF8" stroke-width="0.49" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-8.21393 475.132C603.115 -330.173 847.402 791.37 1218.5 522.626" stroke="#E8EDF8" stroke-width="0.47" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-13.2139 472.132C598.115 -333.173 842.402 788.37 1213.5 519.626" stroke="#E8EDF8" stroke-width="0.47" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-7.32202 489.59C615.554 -344.15 869.277 781.641 1221.58 541.414" stroke="#E7ECF8" stroke-width="0.44" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-12.322 486.59C610.554 -347.15 864.277 778.641 1216.58 538.414" stroke="#E7ECF8" stroke-width="0.44" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-6.41827 504.084C628.029 -358.104 891.141 771.936 1224.64 560.226" stroke="#E5ECF7" stroke-width="0.42" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-11.4183 501.084C623.029 -361.104 886.141 768.936 1219.64 557.226" stroke="#E5ECF7" stroke-width="0.42" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-5.51465 518.53C640.516 -372.093 913.015 762.196 1227.66 578.992" stroke="#E4EBF7" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-10.5146 515.53C635.516 -375.093 908.015 759.196 1222.66 575.992" stroke="#E4EBF7" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-4.62286 533C652.99 -386.07 934.878 752.455 1230.71 597.781" stroke="#E3EAF7" stroke-width="0.37" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-9.62286 530C647.99 -389.07 929.878 749.455 1225.71 594.781" stroke="#E3EAF7" stroke-width="0.37" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-3.71924 547.505C665.477 -400.011 956.754 742.785 1233.76 616.604" stroke="#E2E9F6" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-8.71924 544.505C660.477 -403.011 951.754 739.785 1228.76 613.604" stroke="#E2E9F6" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-2.82727 561.94C677.952 -414.024 978.652 733.033 1236.83 635.358" stroke="#E1E8F6" stroke-width="0.32" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-7.82727 558.94C672.952 -417.024 973.652 730.033 1231.83 632.358" stroke="#E1E8F6" stroke-width="0.32" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M-1.92365 576.41C690.474 -427.989 1000.48 723.316 1239.86 654.146" stroke="#E0E8F6" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-6.92365 573.41C685.474 -430.989 995.48 720.316 1234.86 651.146" stroke="#E0E8F6" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M-1.02002 590.927C702.925 -441.919 1022.32 713.634 1242.95 672.982" stroke="#DFE7F5" stroke-width="0.27" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-6.02002 587.927C697.925 -444.919 1017.32 710.634 1237.95 669.982" stroke="#DFE7F5" stroke-width="0.27" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M-0.0928955 605.338C715.436 -455.955 1044.25 703.917 1246 691.712" stroke="#DEE6F5" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<g style="mix-blend-mode:overlay">
+<path d="M-5.0929 602.338C710.436 -458.955 1039.25 700.917 1241 688.712" stroke="#DEE6F5" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1118.67 648.278C732.37 788.495 707.807 464.875 119.375 724.783" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1113.67 645.278C727.37 785.495 702.807 461.875 114.375 721.783" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1120.03 637.576C722.031 789.516 693.032 453.621 118.26 705.114" stroke="#F8FAFD" stroke-width="2.94" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1115.03 634.576C717.031 786.516 688.032 450.621 113.26 702.114" stroke="#F8FAFD" stroke-width="2.94" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1121.4 626.861C711.704 790.537 678.222 442.285 117.145 685.445" stroke="#F2F5FB" stroke-width="2.87" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1116.4 623.861C706.704 787.537 673.222 439.285 112.145 682.445" stroke="#F2F5FB" stroke-width="2.87" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1122.77 616.158C701.365 791.604 663.482 430.983 116.089 665.776" stroke="#EBF0F9" stroke-width="2.81" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1117.77 613.158C696.365 788.604 658.482 427.983 111.089 662.776" stroke="#EBF0F9" stroke-width="2.81" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1124.17 605.456C691.038 792.567 648.707 419.682 114.916 646.084" stroke="#E5EBF7" stroke-width="2.74" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1119.17 602.456C686.038 789.567 643.707 416.682 109.916 643.084" stroke="#E5EBF7" stroke-width="2.74" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1125.5 594.741C680.722 793.576 633.932 408.38 113.812 626.427" stroke="#DEE6F5" stroke-width="2.68" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1120.5 591.741C675.722 790.576 628.932 405.38 108.812 623.427" stroke="#DEE6F5" stroke-width="2.68" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1126.86 584.038C670.348 794.597 619.145 397.091 112.698 606.77" stroke="#D8E1F3" stroke-width="2.61" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1121.86 581.038C665.348 791.597 614.145 394.091 107.698 603.77" stroke="#D8E1F3" stroke-width="2.61" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1128.22 573.324C660.044 795.618 604.37 385.79 111.583 587.089" stroke="#D1DCF1" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1123.22 570.324C655.044 792.618 599.37 382.79 106.583 584.089" stroke="#D1DCF1" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1129.58 562.621C649.705 796.639 589.595 374.5 110.468 567.456" stroke="#CBD6EF" stroke-width="2.48" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1124.58 559.621C644.705 793.639 584.595 371.5 105.468 564.456" stroke="#CBD6EF" stroke-width="2.48" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1130.96 551.918C639.378 797.649 574.82 363.198 109.353 547.751" stroke="#C4D1ED" stroke-width="2.42" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1125.96 548.918C634.378 794.649 569.82 360.198 104.353 544.751" stroke="#C4D1ED" stroke-width="2.42" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1132.32 541.215C629.039 798.646 560.045 351.897 108.238 528.083" stroke="#BECCEB" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1127.32 538.215C624.039 795.646 555.045 348.897 103.238 525.083" stroke="#BECCEB" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1133.68 530.512C618.711 799.679 545.27 340.608 107.123 508.414" stroke="#B7C7E9" stroke-width="2.29" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1128.68 527.512C613.711 796.679 540.27 337.608 102.123 505.414" stroke="#B7C7E9" stroke-width="2.29" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1135.05 519.798C608.372 800.7 530.495 329.306 106.02 488.745" stroke="#B0C2E7" stroke-width="2.23" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1130.05 516.798C603.372 797.7 525.495 326.306 101.02 485.745" stroke="#B0C2E7" stroke-width="2.23" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1136.41 509.095C598.045 801.721 515.72 318.005 104.858 469.077" stroke="#AABDE5" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1131.41 506.095C593.045 798.721 510.72 315.005 99.858 466.077" stroke="#AABDE5" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1137.77 498.392C587.706 802.73 500.933 306.715 103.79 449.396" stroke="#A3B8E3" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1132.77 495.392C582.706 799.73 495.933 303.715 98.79 446.396" stroke="#A3B8E3" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1139.14 487.654C577.379 803.751 486.158 295.414 102.675 429.727" stroke="#9DB3E1" stroke-width="2.03" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1134.14 484.654C572.379 800.751 481.158 292.414 97.675 426.727" stroke="#9DB3E1" stroke-width="2.03" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1140.51 476.975C567.051 804.761 471.383 284.113 101.572 410.082" stroke="#96AEDE" stroke-width="1.97" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1135.51 473.975C562.051 801.761 466.383 281.113 96.572 407.082" stroke="#96AEDE" stroke-width="1.97" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1141.87 466.272C556.712 805.782 456.608 272.823 100.446 390.39" stroke="#90A9DC" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1136.87 463.272C551.712 802.782 451.608 269.823 95.446 387.39" stroke="#90A9DC" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1143.23 455.569C546.385 806.802 441.833 261.521 99.3424 370.721" stroke="#89A4DA" stroke-width="1.84" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1138.23 452.569C541.385 803.802 436.833 258.521 94.3424 367.721" stroke="#89A4DA" stroke-width="1.84" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1144.6 444.855C536.046 807.812 427.081 250.22 98.2277 351.052" stroke="#839FD8" stroke-width="1.77" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1139.6 441.855C531.046 804.812 422.081 247.22 93.2277 348.052" stroke="#839FD8" stroke-width="1.77" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1145.97 434.151C525.66 808.833 412.283 238.93 97.1127 331.371" stroke="#7C9AD6" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1140.97 431.151C520.66 805.833 407.283 235.93 92.1127 328.371" stroke="#7C9AD6" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1147.33 423.449C515.38 809.853 397.508 227.629 95.9979 311.703" stroke="#7595D4" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1142.33 420.449C510.38 806.853 392.508 224.629 90.9979 308.703" stroke="#7595D4" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1148.69 412.734C505.052 810.863 382.721 216.328 94.8829 292.034" stroke="#6F90D2" stroke-width="1.58" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1143.69 409.734C500.052 807.863 377.721 213.328 89.8829 289.034" stroke="#6F90D2" stroke-width="1.58" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1150.06 401.984C494.713 811.884 367.946 205.038 93.7916 272.365" stroke="#688BD0" stroke-width="1.52" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1145.06 398.984C489.713 808.884 362.946 202.038 88.7916 269.365" stroke="#688BD0" stroke-width="1.52" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1151.42 391.329C484.386 812.905 353.147 193.737 92.618 252.697" stroke="#6285CE" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1146.42 388.329C479.386 809.905 348.147 190.737 87.618 249.697" stroke="#6285CE" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1152.78 380.613C474.024 813.902 338.396 182.447 91.55 232.992" stroke="#5B80CC" stroke-width="1.39" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1147.78 377.613C469.024 810.902 333.396 179.447 86.55 229.992" stroke="#5B80CC" stroke-width="1.39" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1154.16 369.911C463.72 814.935 323.621 171.146 90.4352 213.359" stroke="#557BCA" stroke-width="1.32" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1149.16 366.911C458.72 811.935 318.621 168.146 85.4352 210.359" stroke="#557BCA" stroke-width="1.32" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1155.52 359.208C453.392 815.956 308.846 159.845 89.3203 193.737" stroke="#4E76C8" stroke-width="1.26" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1150.52 356.208C448.392 812.956 303.846 156.845 84.3203 190.737" stroke="#4E76C8" stroke-width="1.26" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1156.88 348.505C443.053 816.965 294.07 148.496 88.2054 174.009" stroke="#4871C6" stroke-width="1.19" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1151.88 345.505C438.053 813.965 289.07 145.496 83.2054 171.009" stroke="#4871C6" stroke-width="1.19" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
 <g style="mix-blend-mode:overlay">
-<path d="M1158.21 337.791C432.726 817.986 279.295 137.254 87.0905 154.364" stroke="#416CC4" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1153.21 334.791C427.726 814.986 274.295 134.254 82.0905 151.364" stroke="#416CC4" stroke-width="1.13" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+</g>
 </g>
 <g style="mix-blend-mode:overlay">
-<path d="M1159.61 327.088C422.387 818.995 264.509 125.952 85.9874 134.672" stroke="#3B67C2" stroke-width="1.06" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<g style="mix-blend-mode:overlay">
+<path d="M1154.61 324.088C417.387 815.995 259.509 122.952 80.9874 131.672" stroke="#3B67C2" stroke-width="1.06" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
+</g>
+<g style="mix-blend-mode:overlay">
 <g style="mix-blend-mode:overlay">
-<path d="M1160.98 316.385C412.06 820.017 249.734 114.663 84.8726 115.003" stroke="#3462C0" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
+<path d="M1155.98 313.385C407.06 817.017 244.734 111.663 79.8726 112.003" stroke="#3462C0" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 11"/>
 </g>
 </g>
 </g>
+<circle cx="854" cy="568" r="5" fill="#FABB03"/>
 </g>
 <defs>
-<filter id="filter0_d" x="0" y="0" width="1089" height="780" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
 <clipPath id="clip0">
-<rect x="4" width="1081" height="772" fill="white"/>
+<rect width="1080" height="772" fill="white"/>
 </clipPath>
 </defs>
 </svg>

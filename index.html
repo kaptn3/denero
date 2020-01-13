@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Denero - Увеличиваем прибыль</title>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <header>
+        <a href="/" class="logo">
+          <img src="assets/img/logo.svg" alt="Denero Logotype">
+        </a>
+      </header>
+      <nav class="sidebar__nav">
+        <ul class="nav">
+          <li
+            v-for="item in links"
+            :key="'nav-item-' + item.link"
+          >
+            <a
+              class="nav__item"
+              :href="item.link">
+              {{ item.name }}
+            </a>
+          </li
+          >
+        </ul>
+      </nav>
+      <footer class="sidebar__footer">
+        <a class="sidebar__phone" href="tel:+78126003050">812 600 30 50</a>
+        <button class="btn">
+          Связаться
+        </button>
+      </footer>
+    </aside>
+    <main class="main">
+      <header id="intro" class="main__header main-header">
+        <h1 class="main-header__title">Увеличиваем прибыль</h1>
+        <p class="main-header__small">Системно. С прозрачной отчётностью до денег.</p>
+        <p class="main-header__more">
+          при помощи собственных технологий<br>
+          автоматизации размещения и аналитики интернет-рекламы<br>
+          и альтернативного подхода к маркетингу и разработке
+        </p>  
+      </header>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+:root {
+  --black: #181818;
+  --yellow: #FABB03;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro';
+  src: url('../fonts/BigCityGrotesquePro-Heavy.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro';
+  src: url('../fonts/BigCityGrotesquePro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro';
+  src: url('../fonts/BigCityGrotesquePro-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-It';
+  src: url('../fonts/BigCityGrotesquePro-It.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro';
+  src: url('../fonts/BigCityGrotesquePro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-Book';
+  src: url('../fonts/BigCityGrotesquePro-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-ThinIt';
+  src: url('../fonts/BigCityGrotesquePro-ThinIt.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-BookIt';
+  src: url('../fonts/BigCityGrotesquePro-BookIt.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro';
+  src: url('../fonts/BigCityGrotesquePro-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-HeavyIt';
+  src: url('../fonts/BigCityGrotesquePro-HeavyIt.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-MediumIt';
+  src: url('../fonts/BigCityGrotesquePro-MediumIt.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-Hairline';
+  src: url('../fonts/BigCityGrotesquePro-Hairline.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro';
+  src: url('../fonts/BigCityGrotesquePro-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-LightIt';
+  src: url('../fonts/BigCityGrotesquePro-LightIt.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro';
+  src: url('../fonts/BigCityGrotesquePro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-BlackIt';
+  src: url('../fonts/BigCityGrotesquePro-BlackIt.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-BoldIt';
+  src: url('../fonts/BigCityGrotesquePro-BoldIt.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BigCityGrotesquePro-HairlineIt';
+  src: url('../fonts/BigCityGrotesquePro-HairlineIt.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:active,
+a:visited {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'BigCityGrotesquePro', serif;
+  line-height: 1.5;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  background-color: var(--black);
+}
+
+.btn {
+  font-size: 14px;
+  border-radius: 20px;
+  line-height: 1;
+  border: 1px solid #fff;
+  font-weight: 900;
+  opacity: .5;
+  padding: 12px 27px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 1;
+}
+
+.sidebar {
+  width: 210px;
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 39px 31px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar__footer {
+  text-align: center;
+}
+
+.sidebar__phone {
+  opacity: .6;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 26px;
+  display: block;
+}
+
+.sidebar__phone:hover,
+.sidebar__phone:focus {
+  opacity: 1;
+}
+
+.logo {
+  display: block;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.nav__item {
+  display: block;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.nav__item_active,
+.nav__item:focus,
+.nav__item:hover {
+  color: var(--yellow);
+}
+
+.main {
+  width: 100%;
+}
+
+.main__header {
+  min-height: 100vh;
+  color: #fff;
+  background: url(../img/bg-header.svg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 58px 54px;
+}
+
+.main-header__title {
+  font-size: 5em;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.main-header__small {
+  opacity: .5;
+}
+
+.main-header__more {
+  margin-top: 22.5vh;
+  line-height: 35px;
+}
