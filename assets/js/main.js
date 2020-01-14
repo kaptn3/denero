@@ -72,3 +72,62 @@ var accessSection = new Vue({
 var questions = new Vue({
   el: '.questions'
 });
+
+var form = new Vue({
+  el: '.form',
+  data() {
+    return {
+      contact: '',
+      name: '',
+      message: '',
+      nameError: '',
+      contactError: '',
+      messageError: ''
+    };
+  },
+  methods: {
+    checkForm(e) {
+      if (this.contact && this.name && this.message) {
+        return true;
+      }
+
+      this.nameError = '';
+      this.contactError = '';
+      this.messageError = '';
+
+      if (!this.name) {
+        this.nameError = 'Введите имя';
+      }
+
+      if (!this.contact) {
+        this.contactError = 'Введите телефон или email';
+      }
+
+      if (!this.message) {
+        this.messageError = 'Введите задачу';
+      }
+
+      e.preventDefault();
+    },
+
+  }
+  // Что-то не то: проверьте цифры в телефонном номере
+});
+
+let labels = document.querySelectorAll('.form__label');
+for (let i = 0; i < labels.length; i++) {
+  let placeholder = labels[i].querySelector('.form__input-text');
+  let input = labels[i].querySelector('.form__input');
+  if (placeholder && input) {
+    placeholder.addEventListener('click', () => {
+      placeholder.classList.add('form__input-text_focus');
+      input.focus();
+    });
+
+    input.addEventListener('blur', () => {
+      if (input.value.length === 0) {
+        placeholder.classList.remove('form__input-text_focus');
+      }
+    });
+  }
+}

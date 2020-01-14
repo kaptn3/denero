@@ -310,10 +310,55 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact__form form">
-            <input class="form__input" type="text" placeholder="Ваше имя">
-            <input class="form__input" type="text" placeholder="Телефон или email">
-            <textarea class="form__input form__textarea" placeholder="Опишите вашу задачу" rows="1"></textarea>
+          <form
+            @submit="checkForm"
+            action=""
+            method="post"
+            class="contact__form form">
+            <label for="name" class="form__label">
+              <input
+                v-model="name"
+                name="name"
+                class="form__input"
+                type="text"
+              >
+              <span class="form__input-text">Ваше имя</span>
+              <span
+                v-if="nameError"
+                class="form__error"
+              >
+                {{ nameError }} 
+              </span>
+            </label>
+            <label for="contact" class="form__label">
+              <input
+                v-model="contact"
+                name="contact"
+                class="form__input"
+                type="text"
+              >
+              <span class="form__input-text">Телефон или email</span>
+              <span
+                v-if="contactError"
+                class="form__error"
+              >
+                {{ contactError }} 
+              </span>
+            <label for="message" class="form__label">
+              <textarea
+                v-model="message"
+                name="message"
+                class="form__input form__textarea"
+                rows="1"
+              ></textarea>
+              <span class="form__input-text">Опишите вашу задачу</span>
+              <span
+                v-if="messageError"
+                class="form__error"
+              >
+                {{ messageError }} 
+              </span>
+            </label>
             <div class="form__send">
               <button class="btn btn_black form__btn">Отправить</button>
               <small class="form__small">Отправляя форму вы соглашаетесь на обработку <a class="form__link" href="#">персональных данных</a></small>

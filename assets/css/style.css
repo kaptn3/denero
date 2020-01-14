@@ -763,6 +763,13 @@ body {
   width: 50%;
 }
 
+.form__label {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 31px;
+}
+
 .form__input {
   border: none;
   border-bottom: 2px solid #3F3F3F;
@@ -771,8 +778,26 @@ body {
   display: block;
   width: 100%;
   outline: none;
-  margin-bottom: 31px;
   line-height: 2;
+}
+
+.form__input-text {
+  position: absolute;
+  line-height: 2;
+  color: #3F3F3F;
+  font-size: 18px;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition-duration: .3s;
+  transition-property: top, font-size, color;
+}
+
+.form__input-text_focus {
+  font-size: 12px;
+  top: -16px;
+  color: #838383;
 }
 
 .form__textarea {
@@ -787,6 +812,15 @@ body {
 
 .form__btn {
   margin-right: 15px;
+}
+
+.form__error {
+  font-size: 12px;
+  display: block;
+  color: #F51A1A;
+  position: absolute;
+  top: 44px;
+  z-index: 2;
 }
 
 .form__small {
