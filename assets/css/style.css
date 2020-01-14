@@ -479,12 +479,12 @@ body {
   width: auto;
   border-radius: 4px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .accordion {
   list-style: none;
   padding: 0;
-  width: 593px;
 }
 
 .accordion__item {
