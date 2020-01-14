@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Denero - Увеличиваем прибыль</title>
 </head>
@@ -298,8 +299,13 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact-form">
-            <input type="text">
+          <form action="" class="contact__form form">
+            <input class="form__input" type="text" placeholder="Ваше имя">
+            <input class="form__input" type="text" placeholder="Телефон или email">
+            <textarea class="form__input form__textarea" placeholder="Опишите вашу задачу" rows="1"></textarea>
+            <div class="form__send">
+              <button class="btn btn_black form__btn">Отправить</button>
+              <small class="form__small">Отправляя форму вы соглашаетесь на обработку <a class="form__link" href="#">персональных данных</a></small>
           </form>
         </div>
       </section>
