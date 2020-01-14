@@ -65,6 +65,10 @@ Vue.component('accordion', {
   `
 });
 
-var accordionList = new Vue({
+var accessSection = new Vue({
   el: '.accordion'
+});
+
+var questions = new Vue({
+  el: '.questions'
 });
