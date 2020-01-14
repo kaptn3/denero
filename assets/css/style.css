@@ -315,8 +315,11 @@ body {
   background-color: var(--bg-black);
 }
 
-.competencies-section {
+.main__section_grey {
   background-color: var(--grey);
+}
+
+.competencies-section {
   padding-bottom: 4.5rem;
 }
 
@@ -460,19 +463,43 @@ body {
 }
 
 .numbers {
-  background: #272727;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-  color: #C4C4C4;
   display: flex;
 }
 
 .numbers__item {
+  width: 19%;
+  flex-shrink: 0;
+  margin-right: 3%;
+  font-size: 18px;
+}
+
+.numbers__title {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 9px;
+}
+
+.numbers__small {
+  color: #C4C4C4;
+  font-size: 12px;
+  margin-top: 15px;
+  display: block;
+}
+
+.numbers-other {
+  display: flex;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  background: #272727;
+  color: #C4C4C4;
+}
+
+.numbers-other__item {
   width: 20%;
   flex-shrink: 0;
   margin-right: 2%;
 }
 
-.numbers__title {
+.numbers-other__title {
   font-weight: 900;
   font-size: 25px;
   margin-bottom: 11px;
