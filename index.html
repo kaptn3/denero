@@ -11,32 +11,36 @@
 <body>
   <div class="app">
     <aside class="sidebar">
-      <header>
-        <a href="/" class="logo">
-          <img src="assets/img/logo.svg" alt="Denero Logotype">
-        </a>
-      </header>
-      <nav class="sidebar__nav">
-        <ul class="nav">
-          <li
-            v-for="item in links"
-            :key="'nav-item-' + item.link"
-          >
-            <a
-              class="nav__item"
-              :href="item.link">
-              {{ item.name }}
+      <div class="sidebar__wrapper">
+        <div class="sidebar__inner">
+          <header>
+            <a href="/" class="logo">
+              <img src="assets/img/logo.svg" alt="Denero Logotype">
             </a>
-          </li
-          >
-        </ul>
-      </nav>
-      <footer class="sidebar__footer">
-        <a class="sidebar__phone" href="tel:+78126003050">812 600 30 50</a>
-        <button class="btn">
-          Связаться
-        </button>
-      </footer>
+          </header>
+          <nav class="sidebar__nav">
+            <ul class="nav">
+              <li
+                v-for="item in links"
+                :key="'nav-item-' + item.link"
+              >
+                <a
+                  class="nav__item"
+                  :href="item.link">
+                  {{ item.name }}
+                </a>
+              </li
+              >
+            </ul>
+          </nav>
+          <footer class="sidebar__footer">
+            <a class="sidebar__phone" href="tel:+78126003050">812 600 30 50</a>
+            <button class="btn">
+              Связаться
+            </button>
+          </footer>
+        </div>
+      </div>
     </aside>
     <main class="main">
       <header id="intro" class="main__header main-header">
