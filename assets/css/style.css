@@ -178,8 +178,6 @@ body {
   display: flex;
   width: 100%;
   position: relative;
-  z-index: 2;
-  margin-bottom: 408px; /* map + footer in bottom */
 }
 
 .btn {
@@ -225,6 +223,11 @@ body {
 .title_h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+}
+
+.sidebar {
+  margin-bottom: 168px; /* height of footer-bottom */
+  z-index: 2;
 }
 
 .sidebar__wrapper {
@@ -295,6 +298,8 @@ body {
   position: relative;
   overflow: hidden;
   background-color: #fff;
+  margin-bottom: 408px; /* map + footer in bottom */
+  z-index: 2;
 }
 
 .main__header {
