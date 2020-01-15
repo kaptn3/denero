@@ -154,3 +154,26 @@ for (let i = 0; i < labels.length; i++) {
     });
   }
 }
+
+const slideBox = (box, position, className, count) => {
+  let navActive = document.querySelector(className);
+  box.style.transform = `translateX(-${position * 100}%)`;
+  navActive.style.left = `${position * (100 / count)}%`;
+}
+
+{
+  let box = document.querySelector('.screenshots__box');
+  let items = document.querySelectorAll('.screenshots__item');
+  let nav = document.querySelector('.screenshots__nav');
+  nav.innerHTML += `<div class='screenshots__nav-item-active' style='width: ${100 / items.length}%'></div>`;
+
+  for (let i = 0; i < items.length; i++) {
+    nav.innerHTML += `<div class='screenshots__nav-item' style='width: ${100 / items.length}%'></div>`;
+  }
+  const navItems = document.querySelectorAll('.screenshots__nav-item');
+  for (let k = 0; k < navItems.length; k++) {
+    navItems[k].addEventListener('click', () => {
+      slideBox(box, k, '.screenshots__nav-item-active', navItems.length);
+    });
+  }
+}

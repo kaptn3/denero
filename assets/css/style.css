@@ -206,13 +206,13 @@ body {
 .scroll-box::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
   background-color: rgba(119, 119, 119, .23);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .scroll-box::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
-  border-radius: 2px;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
   background-color: rgba(119, 119, 119, .23);
 }
 
@@ -655,17 +655,19 @@ body {
   width: 100%;
   max-width: 508px;
   margin: 0 auto;
-  overflow-x: auto;
+  overflow: hidden;
 }
 
 .screenshots__box {
   display: flex;
-  width: calc(100% * 3);
+  transition: .5s all;
+  transform: translateX(0);
 }
 
 .screenshots__item {
-  width: calc(100% / 3);
+  width: 100%;
   flex-shrink: 0;
+  margin-bottom: 32px;
 }
 
 .screenshots__title {
@@ -673,12 +675,33 @@ body {
   line-height: 24px;
   text-align: center;
   font-weight: 400;
-  margin-bottom: 32px;
 }
 
 .screenshots__macbook {
   width: 100%;
   margin-bottom: 16px;
+}
+
+.screenshots__nav {
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  background-color: rgba(119, 119, 119, .23);
+  position: relative;
+  cursor: pointer;
+}
+
+.screenshots__nav-item-active {
+  border-radius: 3px;
+  background-color: #606060;
+  transition: .6s left;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 3px;
 }
 
 .numbers-other {
