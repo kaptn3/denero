@@ -210,7 +210,7 @@
           </div>
         </div>
         <div class="screenshots">
-          <div class="scroll-box scroll-box_light screenshots__box">
+          <div class="screenshots__box" :style="`transform: translateX(-${currentSlide * 100}%)`">
             <div class="screenshots__item">
               <div class="screenshots__macbook macbook">
                 <div class="macbook__top">
@@ -241,6 +241,11 @@
               </div>
               <h4 class="screenshots__title">Просмотр списка кампаний и настроек проекта.</h4>
             </div>
+          </div>
+          <div class="screenshots__nav" @click="slide">
+            <div
+              class="screenshots__nav-item-active"
+              :style="`left: ${currentSlide * (100 / 3)}%; width: ${100 / 3}%`"></div>
           </div>
         </div>
       </section>

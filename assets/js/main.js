@@ -155,11 +155,36 @@ for (let i = 0; i < labels.length; i++) {
   }
 }
 
-{
-  let box = document.querySelector('.screenshots__box');
-  let items = document.querySelectorAll('.screenshots__item');
-
-  box.addEventListener('scroll', () => {
-    console.log('eee');
-  })
-}
+var screenshots = new Vue({
+  el: '.screenshots',
+  data() {
+    return {
+      currentSlide: 0,
+      slidesCount: 0,
+      navWidth: 0,
+      left: 0
+    }
+  },
+  mounted() {
+    const item = document.querySelectorAll('.screenshots__item');
+    this.slidesCount = item.length;
+    this.navWidth = document.querySelector('.screenshots__nav-item-active').clientWidth;
+    this.left = document.querySelector('.main').offsetLeft + document.querySelector('.screenshots__box').offsetLeft;
+  },
+  methods: {
+    slide(e) {
+      if ((e.screenX > this.left) && (e.screenX < (this.left + this.slidesCount * this.navWidth))) {
+        const x = e.screenX - this.left;
+        this.currentSlide = Math.abs(Math.floor(x / this.navWidth));
+      }
+    }
+  },
+  watch: {
+    currentSlide() {
+      const titles = document.querySelectorAll('.screenshots__title');
+      for (let m = 0; m < titles.length; m++) {
+        titles[m].style.opacity = (this.currentSlide === m) ? 1 : 0;
+      }
+    }
+  }
+});
