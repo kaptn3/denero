@@ -82,18 +82,39 @@ var form = new Vue({
       message: '',
       nameError: '',
       contactError: '',
-      messageError: ''
+      messageError: '',
+      contactType: 'email'
     };
+  },
+  watch: {
+    contact() {
+      if (this.contact.charAt(0) === '+' && this.contact.charAt(1) === '7') {
+        this.contactType = 'tel';
+      } else if (this.contact.charAt(0) === '8') {
+        this.contactType = 'tel';
+      } else {
+        this.contactType = 'email';
+      }
+    }
   },
   methods: {
     checkForm(e) {
-      if (this.contact && this.name && this.message) {
-        return true;
-      }
-
       this.nameError = '';
       this.contactError = '';
       this.messageError = '';
+
+      if (this.contactType === 'tel') {
+        if (
+          (this.contact.charAt(0) === '+' && this.contact.charAt(1) === '7' && this.contact.length !== 12) || 
+          (this.contact.length !== 11 && this.contact.charAt(0) === '8')) {
+          this.contactError = 'Что-то не то: проверьте цифры в телефонном номере';
+        }
+      } else {
+        let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!re.test(this.contact)) {
+          this.contactError = 'Что-то не то: проверьте правильность email';
+        }
+      }
 
       if (!this.name) {
         this.nameError = 'Введите имя';
@@ -107,11 +128,13 @@ var form = new Vue({
         this.messageError = 'Введите задачу';
       }
 
-      e.preventDefault();
-    },
+      if (!this.nameError && !this.contactError && !this.messageError) {
+        return true;
+      }
 
+      e.preventDefault();
+    }
   }
-  // Что-то не то: проверьте цифры в телефонном номере
 });
 
 let labels = document.querySelectorAll('.form__label');

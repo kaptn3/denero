@@ -794,7 +794,8 @@ body {
   transition-property: top, font-size, color;
 }
 
-.form__input-text_focus {
+.form__input-text_focus,
+.form__input:focus ~ .form__input-text {
   font-size: 12px;
   top: -16px;
   color: #838383;
