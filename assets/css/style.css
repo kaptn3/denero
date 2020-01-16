@@ -240,7 +240,7 @@ body {
 }
 
 .sidebar {
-  margin-bottom: 168px; /* height of footer-bottom */
+  margin-bottom: 85px;
   z-index: 2;
 }
 
@@ -254,12 +254,13 @@ body {
 .sidebar__inner {
   width: 210px;
   flex-shrink: 0;
-  height: 100vh;
+  min-height: calc(100vh - 85px);
   position: sticky;
   top: 0;
   left: 0;
   color: #fff;
   padding: 39px 31px;
+  padding-bottom: 26px;
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -989,6 +990,7 @@ body {
   font-size: 12px;
   color: #BCBCBC;
   display: block;
+  cursor: default;
 }
 
 .form__link {
@@ -1025,8 +1027,9 @@ body {
 
 .footer__socials {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  padding-bottom: 61px;
   width: 210px;
   flex-shrink: 0;
   opacity: 0;
