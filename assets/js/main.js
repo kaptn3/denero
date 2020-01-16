@@ -28,19 +28,28 @@ var nav = new Vue({
     };
   },
   mounted() {
+    const startScroll = window.pageYOffset || document.documentElement.scrollTop;
+    this.setCurrentLink(startScroll);
+    this.fadeIcons(startScroll);
     window.addEventListener('scroll', () => {
-      this.setCurrentLink();
+      const scroll = window.pageYOffset || document.documentElement.scrollTop;
+      this.setCurrentLink(scroll);
+      this.fadeIcons(scroll);
     });
   },
   methods: {
-    setCurrentLink() {
-      const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    setCurrentLink(scroll) {
       for (let i = 0; i < this.links.length; i++) {
         const scrollEl = document.querySelector(this.links[i].link).offsetTop;
         if (scroll > (scrollEl - 30)) {
           this.currentLink = i;
         }
       }
+    },
+    fadeIcons(scroll) {
+      const scrollFooter = document.body.offsetHeight - document.documentElement.clientHeight - 30;
+      const icons = document.querySelector('.footer__socials');
+      icons.style.opacity = (scroll > scrollFooter) ? 1 : 0;
     }
   }
 });

@@ -1029,6 +1029,8 @@ body {
   justify-content: center;
   width: 210px;
   flex-shrink: 0;
+  opacity: 0;
+  transition: .8s opacity;
 }
 
 .footer__social {
