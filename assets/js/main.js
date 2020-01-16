@@ -1,28 +1,47 @@
 var nav = new Vue({
   el: '.nav',
-  data: {
-    links: [
-      {
-        name: 'Что делаем',
-        link: '#intro'
-      },
-      {
-        name: 'Результаты',
-        link: '#results'
-      },
-      {
-        name: 'Подход',
-        link: '#access'
-      },
-      {
-        name: 'Технологии',
-        link: '#technologies'
-      },
-      {
-        name: 'Вопросы',
-        link: '#questions'
+  data() {
+    return {
+      currentLink: 0,
+      links: [
+        {
+          name: 'Что делаем',
+          link: '#intro'
+        },
+        {
+          name: 'Результаты',
+          link: '#results'
+        },
+        {
+          name: 'Подход',
+          link: '#access'
+        },
+        {
+          name: 'Технологии',
+          link: '#technologies'
+        },
+        {
+          name: 'Вопросы',
+          link: '#questions'
+        }
+      ]
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', () => {
+      this.setCurrentLink();
+    });
+  },
+  methods: {
+    setCurrentLink() {
+      const scroll = window.pageYOffset || document.documentElement.scrollTop;
+      for (let i = 0; i < this.links.length; i++) {
+        const scrollEl = document.querySelector(this.links[i].link).offsetTop;
+        if (scroll > (scrollEl - 30)) {
+          this.currentLink = i;
+        }
       }
-    ]
+    }
   }
 });
 

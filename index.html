@@ -22,11 +22,12 @@
           <nav class="sidebar__nav">
             <ul class="nav">
               <li
-                v-for="item in links"
+                v-for="(item, index) in links"
                 :key="'nav-item-' + item.link"
               >
                 <a
                   class="nav__item"
+                  :class="{ 'nav__item_active': currentLink === index }"
                   :href="item.link">
                   {{ item.name }}
                 </a>
