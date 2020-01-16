@@ -155,27 +155,67 @@ for (let i = 0; i < labels.length; i++) {
   }
 }
 
-var screenshots = new Vue({
-  el: '.screenshots',
+var slider = {
   data() {
     return {
       currentSlide: 0,
+      lastCurrentSlide: 0,
       slidesCount: 0,
       navWidth: 0,
       left: 0
-    }
+    };
   },
   mounted() {
-    const item = document.querySelectorAll('.screenshots__item');
+    const item = document.querySelectorAll(this.classes.item);
     this.slidesCount = item.length;
-    this.navWidth = document.querySelector('.screenshots__nav-item-active').clientWidth;
-    this.left = document.querySelector('.main').offsetLeft + document.querySelector('.screenshots__box').offsetLeft;
+    this.navWidth = document.querySelector(this.classes.activeNavItem).clientWidth;
+    this.left = document.querySelector('.main').offsetLeft + document.querySelector(this.classes.nav).offsetLeft;
+
+    this.dragHandle();
   },
   methods: {
     slide(e) {
       if ((e.screenX > this.left) && (e.screenX < (this.left + this.slidesCount * this.navWidth))) {
         const x = e.screenX - this.left;
         this.currentSlide = Math.abs(Math.floor(x / this.navWidth));
+      }
+    },
+    dragHandle() {
+      let el = document.querySelector(this.classes.wrapper);
+      let mc = new Hammer(el);
+      mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0 }) );
+      mc.on('panstart', () => {
+        this.lastCurrentSlide = this.currentSlide;
+      })
+      mc.on('panleft panright', (e) => {
+        const x = this.lastCurrentSlide - (e.deltaX / el.clientWidth);
+        this.currentSlide = Math.min((this.slidesCount - 1), Math.max(0, x));
+      });
+      mc.on('panend', (e) => {
+        const sign = Math.sign(e.deltaX);
+        const box = el.querySelector(this.classes.box);
+        box.style.transitionDuration = '.8s';
+        const round = Math.round(this.currentSlide - ((sign * 1) / 2));
+        this.currentSlide = Math.min((this.slidesCount - 1), Math.max(0, round));
+        setTimeout(() => {
+          box.style.transitionDuration = '0s';
+        }, 800);
+      });
+    }
+  }
+}
+
+var screenshots = new Vue({
+  el: '.screenshots',
+  mixins: [slider],
+  data() {
+    return {
+      classes: {
+        wrapper: '.screenshots',
+        box: '.screenshots__box',
+        item: '.screenshots__item',
+        activeNavItem: '.screenshots__nav-item-active',
+        nav: '.screenshots__nav'
       }
     }
   },
@@ -191,39 +231,31 @@ var screenshots = new Vue({
 
 var results = new Vue({
   el: '.results',
+  mixins: [slider],
   data() {
     return {
-      currentSlide: 0,
-      slidesCount: 0,
-      navWidth: 0,
-      left: 0
-    }
-  },
-  mounted() {
-    const item = document.querySelectorAll('.results__item');
-    this.slidesCount = item.length;
-    this.navWidth = document.querySelector('.results__nav-item-active').clientWidth;
-    this.left = document.querySelector('.main').offsetLeft + document.querySelector('.results__nav').offsetLeft;
-  },
-  methods: {
-    slide(e) {
-      if ((e.screenX > this.left) && (e.screenX < (this.left + this.slidesCount * this.navWidth))) {
-        const x = e.screenX - this.left;
-        this.currentSlide = Math.abs(Math.floor(x / this.navWidth));
+      classes: {
+        wrapper: '.results__wrapper',
+        box: '.results__box',
+        item: '.results__item',
+        activeNavItem: '.results__nav-item-active',
+        nav: '.results__nav'
       }
     }
   },
   watch: {
     currentSlide() {
-      const results = document.querySelector('.results');
-      const img = results.querySelectorAll('.macbook__screen');
-      for (let m = 0; m < img.length; m++) {
-        img[m].style.opacity = 0;
-      }
+      if (Number.isInteger(this.currentSlide)) {
+        const results = document.querySelector('.results');
+        const img = results.querySelectorAll('.macbook__screen');
+        for (let m = 0; m < img.length; m++) {
+          img[m].style.opacity = 0;
+        }
 
-      setTimeout(() => {
-        img[this.currentSlide].style.opacity = 1;
-      }, 800);
+        setTimeout(() => {
+          img[this.currentSlide].style.opacity = 1;
+        }, 800);
+      }
     }
   }
 });

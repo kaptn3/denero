@@ -393,13 +393,14 @@ body {
 
 .results__wrapper {
   overflow: hidden;
+  width: 100%;
 }
 
 .results__box {
   display: flex;
-  transition: .7s transform;
   width: 100%;
-  transition: .6s transform;
+  transition: 0 transform ease-out;
+  cursor: url(../img/icons/drag.png) 16 9, ew-resize;
 }
 
 .results__item {
@@ -552,6 +553,9 @@ body {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  pointer-events: none;
+  user-select: none;
+  display: block;
 }
 
 .access {
@@ -731,13 +735,18 @@ body {
 
 .screenshots__box {
   display: flex;
-  transition: .6s transform;
+  transition: 0 transform ease-out;
+  cursor: url(../img/icons/drag.png) 16 9, ew-resize;
 }
 
 .screenshots__item {
   width: 100%;
   flex-shrink: 0;
   margin-bottom: 32px;
+}
+
+.screenshots__item img {
+  user-select: none;
 }
 
 .screenshots__title {
