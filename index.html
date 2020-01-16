@@ -84,45 +84,55 @@
         </div>
       </section>
       <section id="results" class="main__section results">
-        <h2 class="title_h1">Результаты</h2>
-        <div class="results__item">
-          <div class="results__all-text">
-            <h3 class="results__title">Партнёр</h3>
-            <p class="results__text">
-              Pandora — технологический лидер в производстве систем автобезопасности. Компания имеет более 500 дилерских точек в России, СНГ и Европе.
-            </p>
-            <h3 class="results__title">Результат</h3>
-            <p class="results__text">Помогли продать <strong class="results__text_bold">20 000 устройств на 250 млн. ₽</strong> за квартал.</p>
-            <h3 class="results__title">Срок сотрудничества</h3>
-            <p class="results__text">14 лет</p>
+        <h2 class="title_h1 results__header">Результаты</h2>
+        <div class="results__wrapper">
+          <div class="results__box" :style="`transform: translateX(-${currentSlide * 100}%)`">
+            <div class="results__item" v-for="i in 3">
+              <div class="results__all-text">
+                <h3 class="results__title">Партнёр</h3>
+                <p class="results__text">
+                  Pandora — технологический лидер в производстве систем автобезопасности. Компания имеет более 500 дилерских точек в России, СНГ и Европе.
+                </p>
+                <h3 class="results__title">Результат</h3>
+                <p class="results__text">Помогли продать <strong class="results__text_bold">20 000 устройств на 250 млн. ₽</strong> за квартал.</p>
+                <h3 class="results__title">Срок сотрудничества</h3>
+                <p class="results__text">14 лет</p>
+              </div>
+              <blockquote class="results__quote">
+                <p>
+                  Думаю, при таком глубоком погружении, квалификации, творчестве и желании работать успех был неизбежен.
+                </p>
+                <p>
+                  Наши вложения в эту рекламную программу более чем окупились.
+                </p>
+                <div class="results__quote-author">
+                  <div class="results__quote-author-img">
+                    <img src="assets/img/photo.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="results__quote-author-name">Рябов Валерий Анатольевич</h4>
+                    <p class="results__quote-author-job">Генеральный директор и сооснователь компании</p>
+                  </div>
+                </div>
+                <a class="results__quote-link" href="">
+                  <img src="assets/img/vcru-logo.png" alt="">
+                  <span>Читать кейс на vc.ru</span>
+                </a>
+              </blockquote>
+            </div>
           </div>
-          <blockquote class="results__quote">
-            <p>
-              Думаю, при таком глубоком погружении, квалификации, творчестве и желании работать успех был неизбежен.
-            </p>
-            <p>
-              Наши вложения в эту рекламную программу более чем окупились.
-            </p>
-            <div class="results__quote-author">
-              <div class="results__quote-author-img">
-                <img src="assets/img/photo.png" alt="">
-              </div>
-              <div>
-                <h4 class="results__quote-author-name">Рябов Валерий Анатольевич</h4>
-                <p class="results__quote-author-job">Генеральный директор и сооснователь компании</p>
-              </div>
-            </div>
-            <a class="results__quote-link" href="">
-              <img src="assets/img/vcru-logo.png" alt="">
-              <span>Читать кейс на vc.ru</span>
+        </div>
+        <div class="results__website macbook">
+          <div class="macbook__top">
+            <a v-for="l in 3" href="https://pandora90.ru/" target="_blank" class="results__website-screen macbook__screen">
+              <img src="assets/img/website.png" alt="">
             </a>
-          </blockquote>
-          <div class="results__website macbook">
-            <div class="macbook__top">
-              <a href="https://pandora90.ru/" target="_blank" class="macbook__screen">
-                <img src="assets/img/website.png" alt="">
-              </a>
-            </div>
+          </div>
+        </div>
+        <div class="results__nav" @click="slide">
+          <div
+            class="results__nav-item-active"
+            :style="`left: ${currentSlide * (100 / 3)}%; width: ${100 / 3}%`">
           </div>
         </div>
       </section>

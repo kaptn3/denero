@@ -188,3 +188,42 @@ var screenshots = new Vue({
     }
   }
 });
+
+var results = new Vue({
+  el: '.results',
+  data() {
+    return {
+      currentSlide: 0,
+      slidesCount: 0,
+      navWidth: 0,
+      left: 0
+    }
+  },
+  mounted() {
+    const item = document.querySelectorAll('.results__item');
+    this.slidesCount = item.length;
+    this.navWidth = document.querySelector('.results__nav-item-active').clientWidth;
+    this.left = document.querySelector('.main').offsetLeft + document.querySelector('.results__nav').offsetLeft;
+  },
+  methods: {
+    slide(e) {
+      if ((e.screenX > this.left) && (e.screenX < (this.left + this.slidesCount * this.navWidth))) {
+        const x = e.screenX - this.left;
+        this.currentSlide = Math.abs(Math.floor(x / this.navWidth));
+      }
+    }
+  },
+  watch: {
+    currentSlide() {
+      const results = document.querySelector('.results');
+      const img = results.querySelectorAll('.macbook__screen');
+      for (let m = 0; m < img.length; m++) {
+        img[m].style.opacity = 0;
+      }
+
+      setTimeout(() => {
+        img[this.currentSlide].style.opacity = 1;
+      }, 800);
+    }
+  }
+});
