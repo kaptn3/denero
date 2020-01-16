@@ -20,7 +20,7 @@
             </a>
           </header>
           <nav class="sidebar__nav">
-            <ul class="nav">
+            <ul class="nav" v-cloak>
               <li
                 v-for="(item, index) in links"
                 :key="'nav-item-' + item.link"
@@ -84,10 +84,13 @@
           </div>
         </div>
       </section>
-      <section id="results" class="main__section results">
+      <section id="results" class="main__section results" v-cloak>
         <h2 class="title_h1 results__header">Результаты</h2>
         <div class="results__wrapper">
-          <div class="results__box" :style="`transform: translateX(-${currentSlide * 100}%)`">
+          <div
+            class="results__box"
+            :style="`transform: translateX(-${currentSlide * 100}%)`"
+          >
             <div class="results__item" v-for="i in 3">
               <div class="results__all-text">
                 <h3 class="results__title">Партнёр</h3>
@@ -141,7 +144,7 @@
         <h2 class="title_h1">Подход</h2>
         <div class="access">
           <div class="scroll-box access__box">
-            <ul class="accordion">
+            <ul class="accordion" v-cloak>
               <accordion title="Глубоко погружаемся в бизнес-процессы">
                 <p></p>
               </accordion>
@@ -220,8 +223,11 @@
             </div>
           </div>
         </div>
-        <div class="screenshots">
-          <div class="screenshots__box" :style="`transform: translateX(-${currentSlide * 100}%)`">
+        <div class="screenshots" v-cloak>
+          <div
+            class="screenshots__box"
+            :style="`transform: translateX(-${currentSlide * 100}%)`"
+          >
             <div class="screenshots__item">
               <div class="screenshots__macbook macbook">
                 <div class="macbook__top">
@@ -313,7 +319,7 @@
         </div>
         <button class="btn companies__get-access">Получить демо-доступ</button>
       </section>
-      <section id="questions" class="main__section questions">
+      <section id="questions" class="main__section questions" v-cloak>
         <h2 class="title_h1">Вопросы</h2>
         <div class="questions__list">
         <ul class="questions__box">
@@ -372,7 +378,9 @@
             @submit="checkForm"
             action=""
             method="post"
-            class="contact__form form">
+            class="contact__form form"
+            v-cloak
+          >
             <label for="name" class="form__label">
               <input
                 v-model="name"

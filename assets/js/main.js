@@ -125,6 +125,25 @@ var form = new Vue({
       }
     }
   },
+  mounted() {
+    let labels = document.querySelectorAll('.form__label');
+    for (let i = 0; i < labels.length; i++) {
+      let placeholder = labels[i].querySelector('.form__input-text');
+      let input = labels[i].querySelector('.form__input');
+      if (placeholder && input) {
+        placeholder.addEventListener('click', () => {
+          placeholder.classList.add('form__input-text_focus');
+          input.focus();
+        });
+
+        input.addEventListener('blur', () => {
+          if (input.value.length === 0) {
+            placeholder.classList.remove('form__input-text_focus');
+          }
+        });
+      }
+    }
+  },
   methods: {
     checkForm(e) {
       this.nameError = '';
@@ -165,24 +184,6 @@ var form = new Vue({
   }
 });
 
-let labels = document.querySelectorAll('.form__label');
-for (let i = 0; i < labels.length; i++) {
-  let placeholder = labels[i].querySelector('.form__input-text');
-  let input = labels[i].querySelector('.form__input');
-  if (placeholder && input) {
-    placeholder.addEventListener('click', () => {
-      placeholder.classList.add('form__input-text_focus');
-      input.focus();
-    });
-
-    input.addEventListener('blur', () => {
-      if (input.value.length === 0) {
-        placeholder.classList.remove('form__input-text_focus');
-      }
-    });
-  }
-}
-
 var slider = {
   data() {
     return {
@@ -190,7 +191,8 @@ var slider = {
       lastCurrentSlide: 0,
       slidesCount: 0,
       navWidth: 0,
-      left: 0
+      left: 0,
+      draggble: false
     };
   },
   mounted() {
@@ -214,6 +216,8 @@ var slider = {
       mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0 }) );
       mc.on('panstart', () => {
         this.lastCurrentSlide = this.currentSlide;
+        this.draggble = true;
+        document.querySelector(this.classes.box).style.transitionDuration = '0s';
       })
       mc.on('panleft panright', (e) => {
         const x = this.lastCurrentSlide - (e.deltaX / el.clientWidth);
@@ -229,6 +233,24 @@ var slider = {
           box.style.transitionDuration = '0s';
         }, 800);
       });
+      mc.on('panend', () => {
+        this.draggble = false;
+      });
+      mc.on('tap', () => {
+        this.currentSlide = Math.min(this.slidesCount - 1, this.currentSlide + 1);
+      })
+    }
+  },
+  watch: {
+    currentSlide() {
+      if (!this.draggble) {
+        document.querySelector(this.classes.box).style.transitionDuration = '.8s';
+        setTimeout(() => {
+          document.querySelector(this.classes.box).style.transitionDuration = '0s';
+        }, 800);
+      } else {
+        document.querySelector(this.classes.box).style.transitionDuration = '0s';
+      }
     }
   }
 }
@@ -283,11 +305,6 @@ var results = new Vue({
         setTimeout(() => {
           img[this.currentSlide].style.opacity = 1;
         }, 800);
-
-        document.querySelector(this.classes.box).style.transitionDuration = '.8s';
-        setTimeout(() => {
-          document.querySelector(this.classes.box).style.transitionDuration = '0s';
-          }, 800);
       }
     }
   }
