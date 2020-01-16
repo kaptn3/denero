@@ -208,6 +208,7 @@ body {
 }
 
 .scroll-box::-webkit-scrollbar {
+  height: 2px;
   width: 2px;
   border-radius: 2px;
   background-color: rgba(119, 119, 119, .23);
@@ -823,9 +824,21 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.companies__wrapper {
+  padding-bottom: 10px;
+}
+
 .companies__box {
   display: flex;
-  margin-bottom: 58px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: .3s overflow;
+}
+
+.companies__wrapper:hover .companies__box,
+.companies__wrapper:focus .companies__box {
+  overflow-x: auto;
 }
 
 .companies__item {

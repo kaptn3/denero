@@ -16,7 +16,7 @@ var nav = new Vue({
       },
       {
         name: 'Технологии',
-        link: '#tehnologies'
+        link: '#technologies'
       },
       {
         name: 'Вопросы',
@@ -255,6 +255,11 @@ var results = new Vue({
         setTimeout(() => {
           img[this.currentSlide].style.opacity = 1;
         }, 800);
+
+        document.querySelector(this.classes.box).style.transitionDuration = '.8s';
+        setTimeout(() => {
+          document.querySelector(this.classes.box).style.transitionDuration = '0s';
+          }, 800);
       }
     }
   }
