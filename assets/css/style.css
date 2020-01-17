@@ -577,6 +577,14 @@ body {
 }
 
 .access {
+  padding-left: 0;
+}
+
+.access__title {
+  padding-left: 60px;
+}
+
+.access__wrapper {
   height: 470px;
   display: flex;
   align-items: flex-start;
@@ -586,6 +594,7 @@ body {
 .access__box {
   height: 100%;
   overflow-y: auto;
+  padding-left: 60px;
 }
 
 .access__img {
