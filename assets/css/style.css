@@ -339,7 +339,6 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   padding: 58px 54px;
   background-color: var(--bg-black);
 }
@@ -349,6 +348,7 @@ body {
   font-weight: 900;
   line-height: 1;
   margin-bottom: 25px;
+  margin-top: 244px;
 }
 
 .main-header__small {
@@ -356,7 +356,7 @@ body {
 }
 
 .main-header__more {
-  margin-top: 22.5vh;
+  margin-top: 220px;
   line-height: 35px;
 }
 
