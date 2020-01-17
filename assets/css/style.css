@@ -333,7 +333,6 @@ body {
 }
 
 .main__header {
-  min-height: 100vh;
   color: #fff;
   background: url(../img/bg-header.svg) no-repeat center;
   background-size: cover;
