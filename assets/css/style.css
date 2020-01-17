@@ -588,7 +588,6 @@ body {
   height: 470px;
   display: flex;
   align-items: flex-start;
-  overflow: hidden;
 }
 
 .access__box {
