@@ -248,6 +248,12 @@ body {
   z-index: 2;
 }
 
+.sidebar__header {
+  position: fixed;
+  top: 39px;
+  left: 31px;
+}
+
 .sidebar__wrapper {
   position: relative;
   width: 210px;
@@ -270,6 +276,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--bg-black);
+}
+
+.sidebar__nav {
+  margin: auto 0;
 }
 
 .sidebar__footer {
