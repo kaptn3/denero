@@ -258,7 +258,7 @@ body {
 .sidebar__inner {
   width: 210px;
   flex-shrink: 0;
-  min-height: calc(100vh - 85px);
+  min-height: 100vh;
   position: sticky;
   top: 0;
   left: 0;
