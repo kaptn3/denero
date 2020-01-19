@@ -450,7 +450,7 @@ body {
 
 .results__wrapper {
   overflow: hidden;
-  width: 100%;
+  max-width: 720px;
 }
 
 .results__box {
@@ -895,18 +895,13 @@ body {
 
 .companies__wrapper {
   padding-bottom: 10px;
+  overflow: hidden;
 }
 
 .companies__box {
   display: flex;
   margin-bottom: 20px;
-  overflow: hidden;
-  transition: .3s overflow;
-}
-
-.companies__wrapper:hover .companies__box,
-.companies__wrapper:focus .companies__box {
-  overflow-x: auto;
+  transition: .8s transform;
 }
 
 .companies__item {

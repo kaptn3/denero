@@ -318,10 +318,6 @@ const showSidebar = () => {
   nav.classList.toggle('sidebar__nav_show');
   footer.classList.toggle('sidebar__footer_show');
   inner.classList.toggle('sidebar__inner_show');
-  
-  if (nav.classList.contains('.sidebar__nav_show')) {
-
-  }
 }
 
 {
