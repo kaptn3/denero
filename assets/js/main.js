@@ -49,7 +49,7 @@ var nav = new Vue({
     fadeIcons(scroll) {
       const scrollFooter = document.body.offsetHeight - document.documentElement.clientHeight - 30;
       const icons = document.querySelector('.footer__socials');
-      icons.style.opacity = (scroll > scrollFooter) ? 1 : 0;
+      icons.className = (scroll > scrollFooter) ? 'footer__socials footer__socials_show' : 'footer__socials';
     }
   }
 });
@@ -309,3 +309,17 @@ var results = new Vue({
     }
   }
 });
+
+const showSidebar = () => {
+  const nav = document.querySelector('.sidebar__nav');
+  const footer = document.querySelector('.sidebar__footer');
+  const inner = document.querySelector('.sidebar__inner');
+
+  nav.classList.toggle('sidebar__nav_show');
+  footer.classList.toggle('sidebar__footer_show');
+  inner.classList.toggle('sidebar__inner_show');
+  
+  if (nav.classList.contains('.sidebar__nav_show')) {
+    
+  }
+}
