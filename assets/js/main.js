@@ -320,6 +320,15 @@ const showSidebar = () => {
   inner.classList.toggle('sidebar__inner_show');
   
   if (nav.classList.contains('.sidebar__nav_show')) {
-    
+
   }
+}
+
+{
+  const macbook = document.querySelector('.screenshots__macbook');
+  macbook.style.height = `${macbook.clientWidth * 0.57}px`;
+
+  window.addEventListener('resize', () => {
+    macbook.style.height = `${macbook.clientWidth * 0.57}px`;
+  });
 }
