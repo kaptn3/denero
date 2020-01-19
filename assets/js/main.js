@@ -306,7 +306,7 @@ var results = new Vue({
 
         setTimeout(() => {
           img[this.currentSlide].style.opacity = 1;
-        }, 800);
+        }, 400);
       }
     }
   }

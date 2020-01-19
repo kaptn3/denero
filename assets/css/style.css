@@ -574,7 +574,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  transition-duration: .8s;
+  transition-duration: .4s;
   transition-property: opacity;
 }
 
