@@ -361,6 +361,10 @@ body {
   color: var(--yellow);
 }
 
+.nav__item_active {
+  pointer-events: none;
+}
+
 .main {
   width: 100%;
   position: relative;

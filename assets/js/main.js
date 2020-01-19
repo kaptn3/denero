@@ -29,8 +29,10 @@ var nav = new Vue({
   },
   mounted() {
     const startScroll = window.pageYOffset || document.documentElement.scrollTop;
-    this.setCurrentLink(startScroll);
-    this.fadeIcons(startScroll);
+    document.addEventListener('DOMContentLoaded', () => {
+      this.setCurrentLink(startScroll);
+      this.fadeIcons(startScroll);
+    });
     window.addEventListener('scroll', () => {
       const scroll = window.pageYOffset || document.documentElement.scrollTop;
       this.setCurrentLink(scroll);
@@ -41,7 +43,7 @@ var nav = new Vue({
     setCurrentLink(scroll) {
       for (let i = 0; i < this.links.length; i++) {
         const scrollEl = document.querySelector(this.links[i].link).offsetTop;
-        if (scroll > (scrollEl - 30)) {
+        if (scroll > (scrollEl - 50)) {
           this.currentLink = i;
         }
       }
