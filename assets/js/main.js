@@ -69,7 +69,7 @@ Vue.component('accordion', {
     };
   },
   methods: {
-    showToggle() {
+    showToggle(e) {
       this.isOpen = !this.isOpen;
     }
   },
@@ -96,7 +96,19 @@ Vue.component('accordion', {
 });
 
 var accessSection = new Vue({
-  el: '.accordion'
+  el: '.access',
+  data() {
+    return {
+      height: 'auto'
+    };
+  },
+  mounted() {
+    setInterval(() => {
+      const wrapper = document.querySelector('.access__wrapper');
+      const accordion = wrapper.querySelector('.accordion');
+      this.height = `${accordion.clientHeight >= wrapper.clientHeight ? wrapper.clientHeight + 'px' : 'auto'}`;
+    }, 100);
+  }
 });
 
 var questions = new Vue({
