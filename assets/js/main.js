@@ -198,7 +198,8 @@ var form = new Vue({
   }
 });
 
-var slider = {
+var results = new Vue({
+  el: '.results',
   data() {
     return {
       currentSlide: 0,
@@ -211,11 +212,10 @@ var slider = {
     };
   },
   mounted() {
-    const item = document.querySelectorAll(this.classes.item);
-    const count = document.querySelector('.screenshots__count-slides');
-    this.slidesCount = count ? count.innerHTML : item.length;
-    this.navWidth = document.querySelector(this.classes.activeNavItem).clientWidth;
-    this.left = document.querySelector('.main').offsetLeft + document.querySelector(this.classes.nav).offsetLeft;
+    const item = document.querySelectorAll('.results__item');
+    this.slidesCount = item.length;
+    this.navWidth = document.querySelector('.results__nav-item-active').clientWidth;
+    this.left = document.querySelector('.main').offsetLeft + document.querySelector('.results__nav').offsetLeft;
 
     this.dragHandle();
   },
@@ -227,14 +227,14 @@ var slider = {
       }
     },
     dragHandle() {
-      let el = document.querySelector(this.classes.wrapper);
+      let el = document.querySelector('.results__wrapper');
       let mc = new Hammer(el);
       mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0 }) );
       mc.on('panstart', () => {
         this.lastCurrentSlide = this.currentSlide;
         this.draggble = true;
         this.transitionDuration = '0s';
-      })
+      });
       mc.on('panleft panright', (e) => {
         const x = this.lastCurrentSlide - (e.deltaX / el.clientWidth);
         this.currentSlide = Math.min((this.slidesCount - 1), Math.max(0, x));
@@ -253,7 +253,7 @@ var slider = {
       });
       mc.on('tap', () => {
         this.currentSlide = Math.min(this.slidesCount - 1, this.currentSlide + 1);
-      })
+      });
     }
   },
   watch: {
@@ -268,34 +268,41 @@ var slider = {
       }
     }
   }
-}
+});
 
 var screenshots = new Vue({
   el: '.screenshots',
-  mixins: [slider],
   data() {
     return {
-      classes: {
-        wrapper: '.screenshots',
-        activeNavItem: '.screenshots__nav-item-active',
-        nav: '.screenshots__nav'
-      }
+      currentSlide: 0,
+      slidesCount: 3,
+      navWidth: 0,
+      left: 0
     }
-  }
-});
+  },
+  methods: {
+    slide(e) {
+      if ((e.screenX > this.left) && (e.screenX < (this.left + this.slidesCount * this.navWidth))) {
+        const x = e.screenX - this.left;
+        this.currentSlide = Math.abs(Math.floor(x / this.navWidth));
+      }
+    },
+  },
+  mounted() {
+    this.navWidth = document.querySelector('.screenshots__nav-item-active').clientWidth;
+    this.left = document.querySelector('.main').offsetLeft + document.querySelector('.screenshots__nav').offsetLeft;
 
-var results = new Vue({
-  el: '.results',
-  mixins: [slider],
-  data() {
-    return {
-      classes: {
-        wrapper: '.results__wrapper',
-        item: '.results__item',
-        activeNavItem: '.results__nav-item-active',
-        nav: '.results__nav'
-      }
-    }
+    let el = document.querySelector('.screenshots');
+    let mc = new Hammer(el);
+    mc.on('swipeleft', () => {
+      this.currentSlide = Math.min((this.slidesCount - 1), this.currentSlide + 1);
+    });
+    mc.on('swiperight', () => {
+      this.currentSlide = Math.max(0, this.currentSlide - 1);
+    });
+    mc.on('tap', () => {
+      this.currentSlide = Math.min(this.slidesCount - 1, this.currentSlide + 1);
+    })
   }
 });
 
