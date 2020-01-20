@@ -399,6 +399,7 @@ body {
 .main-header__more {
   margin-top: 220px;
   line-height: 35px;
+  white-space: pre-line;
 }
 
 .main__section {
