@@ -206,12 +206,14 @@ var slider = {
       slidesCount: 0,
       navWidth: 0,
       left: 0,
-      draggble: false
+      draggble: false,
+      transitionDuration: '0s'
     };
   },
   mounted() {
     const item = document.querySelectorAll(this.classes.item);
-    this.slidesCount = item.length;
+    const count = document.querySelector('.screenshots__count-slides');
+    this.slidesCount = count ? count.innerHTML : item.length;
     this.navWidth = document.querySelector(this.classes.activeNavItem).clientWidth;
     this.left = document.querySelector('.main').offsetLeft + document.querySelector(this.classes.nav).offsetLeft;
 
@@ -231,7 +233,7 @@ var slider = {
       mc.on('panstart', () => {
         this.lastCurrentSlide = this.currentSlide;
         this.draggble = true;
-        document.querySelector(this.classes.box).style.transitionDuration = '0s';
+        this.transitionDuration = '0s';
       })
       mc.on('panleft panright', (e) => {
         const x = this.lastCurrentSlide - (e.deltaX / el.clientWidth);
@@ -239,13 +241,12 @@ var slider = {
       });
       mc.on('panend', (e) => {
         const sign = Math.sign(e.deltaX);
-        const box = el.querySelector(this.classes.box);
-        box.style.transitionDuration = '.8s';
+        this.transitionDuration = '1s';
         const round = Math.round(this.currentSlide - ((sign * 1) / 2));
         this.currentSlide = Math.min((this.slidesCount - 1), Math.max(0, round));
         setTimeout(() => {
-          box.style.transitionDuration = '0s';
-        }, 800);
+          this.transitionDuration = '0s';
+        }, 1000);
       });
       mc.on('panend', () => {
         this.draggble = false;
@@ -258,12 +259,12 @@ var slider = {
   watch: {
     currentSlide() {
       if (!this.draggble) {
-        document.querySelector(this.classes.box).style.transitionDuration = '.8s';
+        this.transitionDuration = '1s';
         setTimeout(() => {
-          document.querySelector(this.classes.box).style.transitionDuration = '0s';
-        }, 800);
+          this.transitionDuration = '0s';
+        }, 1000);
       } else {
-        document.querySelector(this.classes.box).style.transitionDuration = '0s';
+        this.transitionDuration = '0s';
       }
     }
   }
@@ -276,18 +277,8 @@ var screenshots = new Vue({
     return {
       classes: {
         wrapper: '.screenshots',
-        box: '.screenshots__box',
-        item: '.screenshots__item',
         activeNavItem: '.screenshots__nav-item-active',
         nav: '.screenshots__nav'
-      }
-    }
-  },
-  watch: {
-    currentSlide() {
-      const titles = document.querySelectorAll('.screenshots__title');
-      for (let m = 0; m < titles.length; m++) {
-        titles[m].style.opacity = (this.currentSlide === m) ? 1 : 0;
       }
     }
   }
@@ -300,25 +291,9 @@ var results = new Vue({
     return {
       classes: {
         wrapper: '.results__wrapper',
-        box: '.results__box',
         item: '.results__item',
         activeNavItem: '.results__nav-item-active',
         nav: '.results__nav'
-      }
-    }
-  },
-  watch: {
-    currentSlide() {
-      if (Number.isInteger(this.currentSlide)) {
-        const results = document.querySelector('.results');
-        const img = results.querySelectorAll('.macbook__screen');
-        for (let m = 0; m < img.length; m++) {
-          img[m].style.opacity = 0;
-        }
-
-        setTimeout(() => {
-          img[this.currentSlide].style.opacity = 1;
-        }, 400);
       }
     }
   }

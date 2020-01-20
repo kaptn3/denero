@@ -112,7 +112,7 @@
         <div class="results__wrapper">
           <div
             class="results__box"
-            :style="`transform: translateX(-${currentSlide * 100}%)`"
+            :style="`transform: translateX(-${currentSlide * 100}%); transition-duration: ${transitionDuration}`"
           >
             <div class="results__item" v-for="i in 3">
               <div class="results__all-text">
@@ -151,9 +151,18 @@
         </div>
         <div class="results__website macbook">
           <div class="macbook__top">
-            <a v-for="l in 3" href="https://pandora90.ru/" target="_blank" class="results__website-screen macbook__screen">
-              <img src="assets/img/website.png" alt="">
-            </a>
+            <transition name="fade" mode="out-in">
+              <a
+                v-for="(l, index) in 3"
+                v-if="index === currentSlide"
+                :href="'https://pandora90.ru/' + index"
+                :key="index"
+                target="_blank"
+                class="results__website-screen macbook__screen"
+              >
+                <img :src="'assets/img/website' + index + '.png'" alt="">
+              </a>
+            </transition>
           </div>
         </div>
         <div class="results__nav" @mouseover="slide">
@@ -247,39 +256,51 @@
           </div>
         </div>
         <div class="screenshots" v-cloak>
+          <!-- Количество слайдов -->
+          <span class="screenshots__count-slides">3</span>
           <div
             class="screenshots__box"
-            :style="`transform: translateX(-${currentSlide * 100}%)`"
           >
             <div class="screenshots__item">
               <div class="screenshots__macbook macbook">
                 <div class="macbook__top">
-                  <div class="macbook__screen">
-                    <img src="assets/img/website.png" alt="">
-                  </div>
+                  <transition name="fade" mode="out-in">
+                    <a
+                      v-for="(l, index) in 3"
+                      v-if="index === currentSlide"
+                      :href="'https://pandora90.ru/' + index"
+                      :key="index"
+                      target="_blank"
+                      class="results__website-screen macbook__screen"
+                    >
+                      <img :src="'assets/img/website' + index + '.png'" alt="">
+                    </a>
+                  </transition>
                 </div>
               </div>
-              <h4 class="screenshots__title">Просмотр списка кампаний и настроек проекта.</h4>
-            </div>
-            <div class="screenshots__item">
-              <div class="screenshots__macbook macbook">
-                <div class="macbook__top">
-                  <div class="macbook__screen">
-                    <img src="assets/img/website.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <h4 class="screenshots__title">Просмотр списка кампаний и настроек проекта.</h4>
-            </div>
-            <div class="screenshots__item">
-              <div class="screenshots__macbook macbook">
-                <div class="macbook__top">
-                  <div class="macbook__screen">
-                    <img draggable="false" src="assets/img/website.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <h4 class="screenshots__title">Просмотр списка кампаний и настроек проекта.</h4>
+              <transition name="fade" mode="out-in">
+                <h4
+                  v-if="0 === currentSlide"
+                  :key="0"
+                  class="screenshots__title"
+                >
+                  Просмотр списка кампаний и настроек проекта.
+                </h4>
+                <h4
+                  v-if="1 === currentSlide"
+                  :key="1"
+                  class="screenshots__title"
+                >
+                  Lorem ipsum dolor sit amet consectetur 
+                </h4>
+                <h4
+                  v-if="2 === currentSlide"
+                  :key="2"
+                  class="screenshots__title"
+                >
+                Modi perspiciatis quasi magnam
+                </h4>
+              </transition>
             </div>
           </div>
           <div class="screenshots__nav" @mouseover="slide">

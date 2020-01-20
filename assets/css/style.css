@@ -208,6 +208,14 @@ body {
   opacity: 1;
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
 .scroll-box::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
 }
@@ -462,7 +470,7 @@ body {
 .results__box {
   display: flex;
   width: 100%;
-  transition: 0 transform ease-out;
+  transition-timing-function: easy-in-out;
   cursor: url(../img/icons/drag.png) 16 9, ew-resize;
 }
 
@@ -574,13 +582,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
-  transition-duration: .4s;
-  transition-property: opacity;
-}
-
-.results__website .results__website-screen:first-child {
-  opacity: 1;
 }
 
 .macbook {
@@ -592,7 +593,7 @@ body {
 }
 
 .macbook__top {
-  height: 94%;
+  height: 95%;
   width: 80%;
   margin: 0 auto;
   background-color: #060914;
@@ -819,6 +820,10 @@ body {
   margin-bottom: 32px;
 }
 
+.screenshots__count-slides {
+  display: none;
+}
+
 .screenshots__item img {
   user-select: none;
 }
@@ -828,14 +833,6 @@ body {
   line-height: 24px;
   text-align: center;
   font-weight: 400;
-  transition-delay: .6s;
-  transition-duration: .5s;
-  transition-property: opacity;
-  opacity: 0;
-}
-
-.screenshots__item:first-child .screenshots__title {
-  opacity: 1;
 }
 
 .screenshots__macbook {
