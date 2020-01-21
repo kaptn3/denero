@@ -59,418 +59,438 @@
       </div>
     </aside>
     <main class="main">
-      <header id="intro" class="main__header main-header">
-        <h1 class="main-header__title">Увеличиваем прибыль</h1>
-        <p class="main-header__small">Системно. С прозрачной отчётностью до денег.</p>
-        <p class="main-header__more">при помощи собственных технологий
-          автоматизации размещения и аналитики интернет-рекламы
-          и альтернативного подхода к маркетингу и разработке
-        </p>  
+      <header id="intro" class="main__header">
+        <div class="container main-header">
+          <h1 class="main-header__title">Увеличиваем прибыль</h1>
+          <p class="main-header__small">Системно. С прозрачной отчётностью до денег.</p>
+          <p class="main-header__more">при помощи собственных технологий
+            автоматизации размещения и аналитики интернет-рекламы
+            и альтернативного подхода к маркетингу и разработке
+          </p> 
+        </div> 
       </header>
       <section class="main__section main__section_grey competencies-section">
-        <h2 class="title_h1">Ключевые компетенции</h2>
-        <div class="competencies">
-          <div class="competencies__item">
-            <div class="competencies__icon">
-              <img src="assets/img/icons/competencies/performance.svg"></img>
+        <div class="container competencies-section__container">
+          <h2 class="title_h1">Ключевые компетенции</h2>
+          <div class="competencies">
+            <div class="competencies__item">
+              <div class="competencies__icon">
+                <img src="assets/img/icons/competencies/performance.svg"></img>
+              </div>
+              <h3 class="competencies__title">Performance-маркетинг </h3>
+              <p class="competencies__more">Реклама, ориентированная на прямой спрос с прозрачной отчётностью до прибыли.</p>
             </div>
-            <h3 class="competencies__title">Performance-маркетинг </h3>
-            <p class="competencies__more">Реклама, ориентированная на прямой спрос с прозрачной отчётностью до прибыли.</p>
-          </div>
-          <div class="competencies__item">
-            <div class="competencies__icon">
-              <img src="assets/img/icons/competencies/brand.svg"></img>
+            <div class="competencies__item">
+              <div class="competencies__icon">
+                <img src="assets/img/icons/competencies/brand.svg"></img>
+              </div>
+              <h3 class="competencies__title">Brand performance</h3>
+              <p class="competencies__more">Увеличение узнаваемости бренда с понятными и KPI для сетевого и федерального бизнеса.</p>
             </div>
-            <h3 class="competencies__title">Brand performance</h3>
-            <p class="competencies__more">Увеличение узнаваемости бренда с понятными и KPI для сетевого и федерального бизнеса.</p>
-          </div>
-          <div class="competencies__item">
-            <div class="competencies__icon">
-              <img src="assets/img/icons/competencies/web.svg"></img>
+            <div class="competencies__item">
+              <div class="competencies__icon">
+                <img src="assets/img/icons/competencies/web.svg"></img>
+              </div>
+              <h3 class="competencies__title">Веб-разработка</h3>
+              <p class="competencies__more">Performance-based разработка, highload, CRM, сложные интеграции, автоматизация.</p>
             </div>
-            <h3 class="competencies__title">Веб-разработка</h3>
-            <p class="competencies__more">Performance-based разработка, highload, CRM, сложные интеграции, автоматизация.</p>
-          </div>
-          <div class="competencies__item">
-            <div class="competencies__icon">
-              <img src="assets/img/icons/competencies/brain.svg"></img>
+            <div class="competencies__item">
+              <div class="competencies__icon">
+                <img src="assets/img/icons/competencies/brain.svg"></img>
+              </div>
+              <h3 class="competencies__title">Веб-и бизнес аналитика </h3>
+              <p class="competencies__more">Внедрение системы оценки результатов маркетинга с фокусом на увеличение прибыли.</p>
             </div>
-            <h3 class="competencies__title">Веб-и бизнес аналитика </h3>
-            <p class="competencies__more">Внедрение системы оценки результатов маркетинга с фокусом на увеличение прибыли.</p>
-          </div>
-          <div class="competencies__item">
-            <div class="competencies__icon">
-              <img src="assets/img/icons/competencies/circles.svg"></img>
+            <div class="competencies__item">
+              <div class="competencies__icon">
+                <img src="assets/img/icons/competencies/circles.svg"></img>
+              </div>
+              <h3 class="competencies__title">Комплексный подход</h3>
+              <p class="competencies__more">Достижение максимальной синергии на стыке маркетинга, бизнес-аналитики и разработки.</p>
             </div>
-            <h3 class="competencies__title">Комплексный подход</h3>
-            <p class="competencies__more">Достижение максимальной синергии на стыке маркетинга, бизнес-аналитики и разработки.</p>
           </div>
         </div>
       </section>
       <section id="results" class="main__section results" v-cloak>
-        <h2 class="title_h1 results__header">Результаты</h2>
-        <div class="results__wrapper">
-          <div
-            class="results__box"
-            :style="`transform: translateX(-${(currentSlide + 1) * 100}%); transition-duration: ${transitionDuration}`"
-          >
-            <div class="results__item" v-for="i in 3">
-              <div class="results__all-text">
-                <h3 class="results__title">Партнёр</h3>
-                <p class="results__text">
-                  Pandora — технологический лидер в производстве систем автобезопасности. Компания имеет более 500 дилерских точек в России, СНГ и Европе.
-                </p>
-                <h3 class="results__title">Результат</h3>
-                <p class="results__text">Помогли продать <strong class="results__text_bold">20 000 устройств на 250 млн. ₽</strong> за квартал.</p>
-                <h3 class="results__title">Срок сотрудничества</h3>
-                <p class="results__text">14 лет</p>
-              </div>
-              <blockquote class="results__quote">
-                <p>
-                  Думаю, при таком глубоком погружении, квалификации, творчестве и желании работать успех был неизбежен.
-                </p>
-                <p>
-                  Наши вложения в эту рекламную программу более чем окупились.
-                </p>
-                <div class="results__quote-author">
-                  <div class="results__quote-author-img">
-                    <img src="assets/img/photo.png" alt="">
-                  </div>
-                  <div>
-                    <h4 class="results__quote-author-name">{{ i }} Рябов Валерий Анатольевич</h4>
-                    <p class="results__quote-author-job">Генеральный директор и сооснователь компании</p>
-                  </div>
+        <div class="container">
+          <h2 class="title_h1 results__header">Результаты</h2>
+          <div class="results__wrapper">
+            <div
+              class="results__box"
+              :style="`transform: translateX(-${(currentSlide + 1) * 100}%); transition-duration: ${transitionDuration}`"
+            >
+              <div class="results__item" v-for="i in 3">
+                <div class="results__all-text">
+                  <h3 class="results__title">Партнёр</h3>
+                  <p class="results__text">
+                    Pandora — технологический лидер в производстве систем автобезопасности. Компания имеет более 500 дилерских точек в России, СНГ и Европе.
+                  </p>
+                  <h3 class="results__title">Результат</h3>
+                  <p class="results__text">Помогли продать <strong class="results__text_bold">20 000 устройств на 250 млн. ₽</strong> за квартал.</p>
+                  <h3 class="results__title">Срок сотрудничества</h3>
+                  <p class="results__text">14 лет</p>
                 </div>
-                <a class="results__quote-link" href="">
-                  <img src="assets/img/vcru-logo.png" alt="">
-                  <span>Читать кейс на vc.ru</span>
-                </a>
-              </blockquote>
+                <blockquote class="results__quote">
+                  <p>
+                    Думаю, при таком глубоком погружении, квалификации, творчестве и желании работать успех был неизбежен.
+                  </p>
+                  <p>
+                    Наши вложения в эту рекламную программу более чем окупились.
+                  </p>
+                  <div class="results__quote-author">
+                    <div class="results__quote-author-img">
+                      <img src="assets/img/photo.png" alt="">
+                    </div>
+                    <div>
+                      <h4 class="results__quote-author-name">{{ i }} Рябов Валерий Анатольевич</h4>
+                      <p class="results__quote-author-job">Генеральный директор и сооснователь компании</p>
+                    </div>
+                  </div>
+                  <a class="results__quote-link" href="">
+                    <img src="assets/img/vcru-logo.png" alt="">
+                    <span>Читать кейс на vc.ru</span>
+                  </a>
+                </blockquote>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="results__website macbook">
-          <div class="macbook__top">
-            <transition name="fade-img" mode="out-in">
-              <a
-                v-for="(l, index) in 3"
-                v-if="index === currentSlide"
-                :href="'https://pandora90.ru/' + index"
-                :key="index"
-                target="_blank"
-                class="results__website-screen macbook__screen"
-              >
-                <img :src="'assets/img/website' + index + '.png'" alt="">
-              </a>
-            </transition>
+          <div class="results__website macbook">
+            <div class="macbook__top">
+              <transition name="fade-img" mode="out-in">
+                <a
+                  v-for="(l, index) in 3"
+                  v-if="index === currentSlide"
+                  :href="'https://pandora90.ru/' + index"
+                  :key="index"
+                  target="_blank"
+                  class="results__website-screen macbook__screen"
+                >
+                  <img :src="'assets/img/website' + index + '.png'" alt="">
+                </a>
+              </transition>
+            </div>
           </div>
-        </div>
-        <div class="results__nav" @mouseover="slide">
-          <div
-            class="results__nav-item-active"
-            :style="`left: ${navPosition * 100 / 3}%; width: ${100 / 3}%`">
+          <div class="results__nav" @mouseover="slide">
+            <div
+              class="results__nav-item-active"
+              :style="`left: ${navPosition * 100 / 3}%; width: ${100 / 3}%`">
+            </div>
           </div>
         </div>
       </section>
       <section id="access" class="main__section access" v-cloak>
-        <h2 class="title_h1">Подход</h2>
-        <div class="access__wrapper">
-            <div class="scroll-box access__box" :style="{ height: height }">
-              <ul class="accordion">
-                <accordion title="Глубоко погружаемся в бизнес-процессы">
-                  <p></p>
-                </accordion>
-                <accordion title="Проводим веб-и бизнес-аналитику"></accordion>
-                <accordion title="Строим понятную для учредителей отчётность до прибыли"></accordion>
-                <accordion title="Берём ответственность за бизнес-KPI">
-                  <p>Основные цели нашей деятельности — снижение стоимости привлечения клиента, увеличение ROI и возможность масштабирования результатов для роста бизнеса наших партнёров.</p>
-                  <p>Поэтому каждое действие на проекте подчиняется бизнес-задачам проекта.</p>
-                </accordion>
-                <accordion title="Работаете ли вы с оплатой за результат?"></accordion>
-                <accordion title="Работаете ли вы с оплатой за результат?"></accordion>
-              </ul>
-            </div>
-          <img class="access__img" src="assets/img/access-photo.png" alt="">
+        <div class="container">
+          <h2 class="title_h1">Подход</h2>
+          <div class="access__wrapper">
+              <div class="scroll-box access__box" :style="{ height: height }">
+                <ul class="accordion">
+                  <accordion title="Глубоко погружаемся в бизнес-процессы">
+                    <p></p>
+                  </accordion>
+                  <accordion title="Проводим веб-и бизнес-аналитику"></accordion>
+                  <accordion title="Строим понятную для учредителей отчётность до прибыли"></accordion>
+                  <accordion title="Берём ответственность за бизнес-KPI">
+                    <p>Основные цели нашей деятельности — снижение стоимости привлечения клиента, увеличение ROI и возможность масштабирования результатов для роста бизнеса наших партнёров.</p>
+                    <p>Поэтому каждое действие на проекте подчиняется бизнес-задачам проекта.</p>
+                  </accordion>
+                  <accordion title="Работаете ли вы с оплатой за результат?"></accordion>
+                  <accordion title="Работаете ли вы с оплатой за результат?"></accordion>
+                </ul>
+              </div>
+            <img class="access__img" src="assets/img/access-photo.png" alt="">
+          </div>
         </div>
       </section>
-      <section class="main__section main__section_grey numbers">
-        <div class="numbers__item">
-          <h3 class="numbers__title">14 лет</h3>
-          <p>Работаем с 2005 года и накопили большой опыт решения сложны задач.</p>
-        </div>
-        <div class="numbers__item">
-          <h3 class="numbers__title">10+ млрд</h3>
-          <p>Рублей выручки сделали сотрудники Denero в разных бизнесах.</p>
-        </div>
-        <div class="numbers__item">
-          <h3 class="numbers__title">70%</h3>
-          <p>Клиентов работают с нами более двух лет на постоянной основе.</p>
-        </div>
-        <div class="numbers__item">
-          <h3 class="numbers__title">на 60%</h3>
-          <p>В год среднем растут обороты наших клиентов по интернет-продажам.</p>
-          <small class="numbers__small">Обеспечиваем уверенный рост даже на падающих рынках.</small>
+      <section class="main__section main__section_grey">
+        <div class="container numbers">
+          <div class="numbers__item">
+            <h3 class="numbers__title">14 лет</h3>
+            <p>Работаем с 2005 года и накопили большой опыт решения сложны задач.</p>
+          </div>
+          <div class="numbers__item">
+            <h3 class="numbers__title">10+ млрд</h3>
+            <p>Рублей выручки сделали сотрудники Denero в разных бизнесах.</p>
+          </div>
+          <div class="numbers__item">
+            <h3 class="numbers__title">70%</h3>
+            <p>Клиентов работают с нами более двух лет на постоянной основе.</p>
+          </div>
+          <div class="numbers__item">
+            <h3 class="numbers__title">на 60%</h3>
+            <p>В год среднем растут обороты наших клиентов по интернет-продажам.</p>
+            <small class="numbers__small">Обеспечиваем уверенный рост даже на падающих рынках.</small>
+          </div>
         </div>
       </section>
       <section id="technologies" class="main__section main__section_black technologies">
-        <h2 class="title_h1">Технологии</h2>
-        <div class="technologies__text">
-          <p>В своей работе мы используем собственные технологии Darts. Это профессиональный инструмент, который заточен на увеличение прибыли, автоматизирует рутинные операции и позволяет сфокусироваться на важных для маркетинга и бизнеса задачах.</p>
-          <p>Darts дают заметные конкурентные преимущества для бизнеса в PPC-рекламе по сравнению со всеми известными нам на рынке решениями.</p>
-        </div>
-        <div class="technologies__box">
-          <div class="technologies__item">
-            <img class="technologies__img" src="assets/img/icons/technologies/dollar.svg" alt="">
-            <div>
-              <h3 class="technologies__title">Оптимизация ставок от прибыли</h3>
-              <p>Уникальный алгоритм биддинга, позволяющий получать оптимальное соотношение объёма трафика и рентабельности.</p>
-            </div>
+        <div class="container">
+          <h2 class="title_h1">Технологии</h2>
+          <div class="technologies__text">
+            <p>В своей работе мы используем собственные технологии Darts. Это профессиональный инструмент, который заточен на увеличение прибыли, автоматизирует рутинные операции и позволяет сфокусироваться на важных для маркетинга и бизнеса задачах.</p>
+            <p>Darts дают заметные конкурентные преимущества для бизнеса в PPC-рекламе по сравнению со всеми известными нам на рынке решениями.</p>
           </div>
-          <div class="technologies__item">
-            <img class="technologies__img" src="assets/img/icons/technologies/codepen.svg" alt="">
-            <div>
-              <h3 class="technologies__title">Сквозное распределение финансовых затрат</h3>
-              <p>По всем системам одновременно в зависимости от объёма выручки и маржинальности направлений бизнеса.</p>
-            </div>
-          </div>
-          <div class="technologies__item">
-            <img class="technologies__img" src="assets/img/icons/technologies/sliders.svg" alt="">
-            <div>
-              <h3 class="technologies__title">Автоматизация рутинных операций</h3>
-              <p>Darts автоматизирует процессы, на которые уходят сотни часов и исключает ошибки, которые являются следствием человеческого фактора.</p>
-            </div>
-          </div>
-          <div class="technologies__item">
-            <img class="technologies__img" src="assets/img/icons/technologies/bar-chart.svg" alt="">
-            <div>
-              <h3 class="technologies__title">Финансовая отчётность</h3>
-              <p>Позволяет руководителю видеть расходы в разрезе товарных категорий, и сразу по всем рекламным системам в едином интерфейсе в режиме реального времени.</p>
-            </div>
-          </div>
-          <div class="technologies__item">
-            <img class="technologies__img" src="assets/img/icons/technologies/func.svg" alt="">
-            <div>
-              <h3 class="technologies__title">Мониторинг цен</h3>
-              <p>Для интернет-магазинов. Отслеживание цен на товары конкурентов и отправка отчёта об изменениях.</p>
-            </div>
-          </div>
-        </div>
-        <div class="screenshots" v-cloak>
-          <div
-            class="screenshots__box"
-          >
-            <div class="screenshots__item">
-              <div class="screenshots__macbook macbook">
-                <div class="macbook__top">
-                  <transition name="fade" mode="out-in">
-                    <a
-                      v-for="(l, index) in 3"
-                      v-if="index === currentSlide"
-                      :href="'https://pandora90.ru/' + index"
-                      :key="index"
-                      target="_blank"
-                      class="results__website-screen macbook__screen"
-                    >
-                      <img :src="'assets/img/website' + index + '.png'" alt="">
-                    </a>
-                  </transition>
-                </div>
+          <div class="technologies__box">
+            <div class="technologies__item">
+              <img class="technologies__img" src="assets/img/icons/technologies/dollar.svg" alt="">
+              <div>
+                <h3 class="technologies__title">Оптимизация ставок от прибыли</h3>
+                <p>Уникальный алгоритм биддинга, позволяющий получать оптимальное соотношение объёма трафика и рентабельности.</p>
               </div>
-              <transition name="fade" mode="out-in">
-                <h4
-                  v-if="0 === currentSlide"
-                  :key="0"
-                  class="screenshots__title"
-                >
-                  Просмотр списка кампаний и настроек проекта.
-                </h4>
-                <h4
-                  v-if="1 === currentSlide"
-                  :key="1"
-                  class="screenshots__title"
-                >
-                  Lorem ipsum dolor sit amet consectetur 
-                </h4>
-                <h4
-                  v-if="2 === currentSlide"
-                  :key="2"
-                  class="screenshots__title"
-                >
-                Modi perspiciatis quasi magnam
-                </h4>
-              </transition>
+            </div>
+            <div class="technologies__item">
+              <img class="technologies__img" src="assets/img/icons/technologies/codepen.svg" alt="">
+              <div>
+                <h3 class="technologies__title">Сквозное распределение финансовых затрат</h3>
+                <p>По всем системам одновременно в зависимости от объёма выручки и маржинальности направлений бизнеса.</p>
+              </div>
+            </div>
+            <div class="technologies__item">
+              <img class="technologies__img" src="assets/img/icons/technologies/sliders.svg" alt="">
+              <div>
+                <h3 class="technologies__title">Автоматизация рутинных операций</h3>
+                <p>Darts автоматизирует процессы, на которые уходят сотни часов и исключает ошибки, которые являются следствием человеческого фактора.</p>
+              </div>
+            </div>
+            <div class="technologies__item">
+              <img class="technologies__img" src="assets/img/icons/technologies/bar-chart.svg" alt="">
+              <div>
+                <h3 class="technologies__title">Финансовая отчётность</h3>
+                <p>Позволяет руководителю видеть расходы в разрезе товарных категорий, и сразу по всем рекламным системам в едином интерфейсе в режиме реального времени.</p>
+              </div>
+            </div>
+            <div class="technologies__item">
+              <img class="technologies__img" src="assets/img/icons/technologies/func.svg" alt="">
+              <div>
+                <h3 class="technologies__title">Мониторинг цен</h3>
+                <p>Для интернет-магазинов. Отслеживание цен на товары конкурентов и отправка отчёта об изменениях.</p>
+              </div>
             </div>
           </div>
-          <div class="screenshots__nav" @mouseover="slide">
+          <div class="screenshots" v-cloak>
             <div
-              class="screenshots__nav-item-active"
-              :style="`left: ${currentSlide * (100 / 3)}%; width: ${100 / 3}%`"></div>
+              class="screenshots__box"
+            >
+              <div class="screenshots__item">
+                <div class="screenshots__macbook macbook">
+                  <div class="macbook__top">
+                    <transition name="fade" mode="out-in">
+                      <a
+                        v-for="(l, index) in 3"
+                        v-if="index === currentSlide"
+                        :href="'https://pandora90.ru/' + index"
+                        :key="index"
+                        target="_blank"
+                        class="results__website-screen macbook__screen"
+                      >
+                        <img :src="'assets/img/website' + index + '.png'" alt="">
+                      </a>
+                    </transition>
+                  </div>
+                </div>
+                <transition name="fade" mode="out-in">
+                  <h4
+                    v-if="0 === currentSlide"
+                    :key="0"
+                    class="screenshots__title"
+                  >
+                    Просмотр списка кампаний и настроек проекта.
+                  </h4>
+                  <h4
+                    v-if="1 === currentSlide"
+                    :key="1"
+                    class="screenshots__title"
+                  >
+                    Lorem ipsum dolor sit amet consectetur 
+                  </h4>
+                  <h4
+                    v-if="2 === currentSlide"
+                    :key="2"
+                    class="screenshots__title"
+                  >
+                  Modi perspiciatis quasi magnam
+                  </h4>
+                </transition>
+              </div>
+            </div>
+            <div class="screenshots__nav" @mouseover="slide">
+              <div
+                class="screenshots__nav-item-active"
+                :style="`left: ${currentSlide * (100 / 3)}%; width: ${100 / 3}%`"></div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="main__section numbers-other">
-        <div class="numbers-other__item">
-          <h3 class="numbers-other__title">1+ млн</h3>
-          <p>Корректировок рекламных материалов в одном проекте в день, в т. ч. графических, синхронизация с сайтом, 1С.</p>
-        </div>
-        <div class="numbers-other__item">
-          <h3 class="numbers-other__title">50+ млн</h3>
-          <p>Обновлений ставок в день с фокусом на прибыль. Уникальный алгоритм биддинга в Яндексе и Google.</p>
-        </div>
-        <div class="numbers-other__item">
-          <h3 class="numbers-other__title">1+ млн позиций</h3>
-          <p>Возможность управления большими и сложными рекламными кампаниями с большим количеством данных.</p>
-        </div>
-        <div class="numbers-other__item">
-          <h3 class="numbers-other__title">100+ городов</h3>
-          <p>Возможность быстрой и эффективной настройки и аналитики большого количества филиалов и городов.</p>
+      <section class="main__section numbers-other-section">
+        <div class="container numbers-other">
+          <div class="numbers-other__item">
+            <h3 class="numbers-other__title">1+ млн</h3>
+            <p>Корректировок рекламных материалов в одном проекте в день, в т. ч. графических, синхронизация с сайтом, 1С.</p>
+          </div>
+          <div class="numbers-other__item">
+            <h3 class="numbers-other__title">50+ млн</h3>
+            <p>Обновлений ставок в день с фокусом на прибыль. Уникальный алгоритм биддинга в Яндексе и Google.</p>
+          </div>
+          <div class="numbers-other__item">
+            <h3 class="numbers-other__title">1+ млн позиций</h3>
+            <p>Возможность управления большими и сложными рекламными кампаниями с большим количеством данных.</p>
+          </div>
+          <div class="numbers-other__item">
+            <h3 class="numbers-other__title">100+ городов</h3>
+            <p>Возможность быстрой и эффективной настройки и аналитики большого количества филиалов и городов.</p>
+          </div>
         </div>
       </section>
       <section class="main__section main__section_black companies">
-        <h2 class="companies__title">Darts интегрирован</h2>
-        <div class="companies__wrapper">
-          <div class="companies__box">
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/1.png" alt="">
-            </a>
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/2.png" alt="">
-            </a>
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/3.png" alt="">
-            </a>
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/4.png" alt="">
-            </a>
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/5.png" alt="">
-            </a>
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/6.png" alt="">
-            </a>
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/7.png" alt="">
-            </a>
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/7.png" alt="">
-            </a>
-            <a href="#" class="companies__item">
-              <img src="assets/img/companies/7.png" alt="">
-            </a>
+        <div class="container">
+          <h2 class="companies__title">Darts интегрирован</h2>
+          <div class="companies__wrapper">
+            <div class="companies__box">
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/1.png" alt="">
+              </a>
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/2.png" alt="">
+              </a>
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/3.png" alt="">
+              </a>
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/4.png" alt="">
+              </a>
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/5.png" alt="">
+              </a>
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/6.png" alt="">
+              </a>
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/7.png" alt="">
+              </a>
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/7.png" alt="">
+              </a>
+              <a href="#" class="companies__item">
+                <img src="assets/img/companies/7.png" alt="">
+              </a>
+            </div>
           </div>
+          <button class="btn companies__get-access">Получить демо-доступ</button>
         </div>
-        <button class="btn companies__get-access">Получить демо-доступ</button>
       </section>
       <section id="questions" class="main__section questions" v-cloak>
-        <h2 class="title_h1">Вопросы</h2>
-        <div class="questions__list">
-        <ul class="questions__box">
-          <accordion title="С какими бюджетами вы работаете?"></accordion>
-          <accordion title="Как производится оценка результатов работы?"></accordion>
-          <accordion title="Сколько времени длится запуск проекта?"></accordion>
-          <accordion title="Работаете ли вы с оплатой за результат?"></accordion>
-        </ul>
-        <ul class="questions__box">
-          <accordion title="С какими бюджетами вы работаете?"></accordion>
-          <accordion title="Сколько времени длится запуск проекта?">
-            <p>Мы готовы включиться в проект, если совокупные затраты на интернет-маркетинг у вас составляют свыше 1 млн. ₽.</p>
-          </accordion>
-        </ul>
+        <div class="container">
+          <h2 class="title_h1">Вопросы</h2>
+          <div class="questions__list">
+          <ul class="questions__box">
+            <accordion title="С какими бюджетами вы работаете?"></accordion>
+            <accordion title="Как производится оценка результатов работы?"></accordion>
+            <accordion title="Сколько времени длится запуск проекта?"></accordion>
+            <accordion title="Работаете ли вы с оплатой за результат?"></accordion>
+          </ul>
+          <ul class="questions__box">
+            <accordion title="С какими бюджетами вы работаете?"></accordion>
+            <accordion title="Сколько времени длится запуск проекта?">
+              <p>Мы готовы включиться в проект, если совокупные затраты на интернет-маркетинг у вас составляют свыше 1 млн. ₽.</p>
+            </accordion>
+          </ul>
+          </div>
         </div>
       </section>
       <section class="main__section contact">
-        <h2 class="title_h1">Связаться</h2>
-        <div class="contact__box">
-          <div class="contact__info">
-            <a href="tel:+78126003050" class="contact__phone">(812) 600-30-50</a>
-            <a href="mailto:company@denero.ru" class="contact__mail">company@denero.ru</a>
-            <a
-              href="https://www.google.com/maps/place/Nevsky+Ave,+19,+5,+Sankt-Peterburg,+191186/@59.9357268,30.3193676,17z/data=!3m1!4b1!4m5!3m4!1s0x469631057be74167:0x23b0d80c5d1b6089!8m2!3d59.9357268!4d30.3215563"
-              class="contact__address"
-              target="_blank"
-            >
-              Санкт-Петербург, Невский пр., д. 19, офис 5
-            </a>
-            <div class="contact__people">
-              <div class="contact__leader">
-                <div class="contact__photo">
-                  <img src="assets/img/leader-1.png" alt="">
+        <div class="container">
+          <h2 class="title_h1">Связаться</h2>
+          <div class="contact__box">
+            <div class="contact__info">
+              <a href="tel:+78126003050" class="contact__phone">(812) 600-30-50</a>
+              <a href="mailto:company@denero.ru" class="contact__mail">company@denero.ru</a>
+              <a
+                href="https://www.google.com/maps/place/Nevsky+Ave,+19,+5,+Sankt-Peterburg,+191186/@59.9357268,30.3193676,17z/data=!3m1!4b1!4m5!3m4!1s0x469631057be74167:0x23b0d80c5d1b6089!8m2!3d59.9357268!4d30.3215563"
+                class="contact__address"
+                target="_blank"
+              >
+                Санкт-Петербург, Невский пр., д. 19, офис 5
+              </a>
+              <div class="contact__people">
+                <div class="contact__leader">
+                  <div class="contact__photo">
+                    <img src="assets/img/leader-1.png" alt="">
+                  </div>
+                  <div>
+                    <h3 class="contact__name">Алексей Козютенко</h3>
+                    <span class="contact__position">Руководитель отдела по работе с клиентами</span>
+                  </div>
                 </div>
-                <div>
-                  <h3 class="contact__name">Алексей Козютенко</h3>
-                  <span class="contact__position">Руководитель отдела по работе с клиентами</span>
-                </div>
-              </div>
-              <div class="contact__leader">
-                <div class="contact__photo">
-                  <img src="assets/img/leader-1.png" alt="">
-                </div>
-                <div>
-                  <h3 class="contact__name">Будков Денис 
-                    <a href="#">
-                      <img src="assets/img/icons/social/facebook-blue.svg" alt="">
-                    </a>
-                  </h3>
-                  <span class="contact__position">Руководитель агентства</span>
+                <div class="contact__leader">
+                  <div class="contact__photo">
+                    <img src="assets/img/leader-1.png" alt="">
+                  </div>
+                  <div>
+                    <h3 class="contact__name">Будков Денис 
+                      <a href="#">
+                        <img src="assets/img/icons/social/facebook-blue.svg" alt="">
+                      </a>
+                    </h3>
+                    <span class="contact__position">Руководитель агентства</span>
+                  </div>
                 </div>
               </div>
             </div>
+            <form
+              @submit="checkForm"
+              action=""
+              method="post"
+              class="contact__form form"
+              v-cloak
+            >
+              <label for="name" class="form__label">
+                <input
+                  v-model="name"
+                  name="name"
+                  class="form__input"
+                  type="text"
+                >
+                <span class="form__input-text">Ваше имя</span>
+                <span
+                  v-if="nameError"
+                  class="form__error"
+                >
+                  {{ nameError }} 
+                </span>
+              </label>
+              <label for="contact" class="form__label">
+                <input
+                  v-model="contact"
+                  name="contact"
+                  class="form__input"
+                  type="text"
+                >
+                <span class="form__input-text">Телефон или email</span>
+                <span
+                  v-if="contactError"
+                  class="form__error"
+                >
+                  {{ contactError }} 
+                </span>
+              <label for="message" class="form__label">
+                <textarea
+                  v-model="message"
+                  name="message"
+                  class="form__input form__textarea"
+                  rows="1"
+                ></textarea>
+                <span class="form__input-text">Опишите вашу задачу</span>
+                <span
+                  v-if="messageError"
+                  class="form__error"
+                >
+                  {{ messageError }} 
+                </span>
+              </label>
+              <div class="form__send">
+                <button class="btn btn_black form__btn">Отправить</button>
+                <small class="form__small">Отправляя форму вы соглашаетесь на обработку <a class="form__link" href="#">персональных данных</a></small>
+            </form>
           </div>
-          <form
-            @submit="checkForm"
-            action=""
-            method="post"
-            class="contact__form form"
-            v-cloak
-          >
-            <label for="name" class="form__label">
-              <input
-                v-model="name"
-                name="name"
-                class="form__input"
-                type="text"
-              >
-              <span class="form__input-text">Ваше имя</span>
-              <span
-                v-if="nameError"
-                class="form__error"
-              >
-                {{ nameError }} 
-              </span>
-            </label>
-            <label for="contact" class="form__label">
-              <input
-                v-model="contact"
-                name="contact"
-                class="form__input"
-                type="text"
-              >
-              <span class="form__input-text">Телефон или email</span>
-              <span
-                v-if="contactError"
-                class="form__error"
-              >
-                {{ contactError }} 
-              </span>
-            <label for="message" class="form__label">
-              <textarea
-                v-model="message"
-                name="message"
-                class="form__input form__textarea"
-                rows="1"
-              ></textarea>
-              <span class="form__input-text">Опишите вашу задачу</span>
-              <span
-                v-if="messageError"
-                class="form__error"
-              >
-                {{ messageError }} 
-              </span>
-            </label>
-            <div class="form__send">
-              <button class="btn btn_black form__btn">Отправить</button>
-              <small class="form__small">Отправляя форму вы соглашаетесь на обработку <a class="form__link" href="#">персональных данных</a></small>
-          </form>
         </div>
       </section>
     </main>
@@ -478,7 +498,7 @@
       <div class="footer__map">
         <iframe class="footer__google-map" height="240" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7839701855212!2d30.31936761604302!3d59.935726781875154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057be74167%3A0x23b0d80c5d1b6089!2sNevsky%20Ave%2C%2019%2C%205%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1579021383866!5m2!1sen!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
-      <div class="footer__bottom">
+      <div class="container footer__bottom">
         <div class="footer__info">
           <div class="footer__copyright">
             © 2020 Denero<br>
@@ -498,7 +518,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div>  
     </footer>
   </div>
   <script src="https://hammerjs.github.io/dist/hammer.js"></script>

@@ -190,6 +190,14 @@ body {
   position: relative;
 }
 
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 55px 60px;
+  position: relative;
+}
+
 .btn {
   font-size: 14px;
   border-radius: 20px;
@@ -435,8 +443,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 58px 60px;
   background-color: var(--bg-black);
+}
+
+.main-header {
+  padding: 58px 0;
 }
 
 .main-header__title {
@@ -457,10 +468,6 @@ body {
   white-space: pre-line;
 }
 
-.main__section {
-  padding: 55px 60px;
-}
-
 .main__section_black {
   background-color: var(--bg-black);
 }
@@ -471,6 +478,9 @@ body {
 
 .competencies-section {
   padding-bottom: 2rem;
+}
+
+.competencies-section__container {
   padding-right: 30px;
 }
 
@@ -643,7 +653,7 @@ body {
 .results__website {
   position: absolute;
   top: 147px;
-  left: 780px;
+  left: 790px;
   z-index: 99;
 }
 
@@ -987,15 +997,18 @@ body {
   z-index: 2;
 }
 
+.numbers-other-section {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  background: #272727;
+}
+
 .numbers-other {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-          box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-  background: #272727;
   color: #C4C4C4;
 }
 
@@ -1243,6 +1256,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .footer__socials {
@@ -1285,7 +1300,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 52px 51px 52px 32px;
+  padding: 52px 0;
   line-height: 2;
 }
 
@@ -1381,7 +1396,7 @@ body {
     padding: 25px 35px;
   }
 
-  .main__section {
+  .container {
     padding: 30px 35px;
   }
 
@@ -1570,7 +1585,7 @@ body {
 
   .main__header,
   .sidebar__inner,
-  .main__section {
+  .container {
     padding: 20px 15px;
   }
 
