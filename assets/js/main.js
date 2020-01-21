@@ -47,6 +47,10 @@ var nav = new Vue({
           this.currentLink = i;
         }
       }
+
+      const footer = document.querySelector('.footer');
+      footer.style.visibility = this.currentLink >= 3 ? 'visible' : 'hidden';
+      footer.style.position = this.currentLink >= 3 ? 'fixed' : 'absolute';
     },
     fadeIcons(scroll) {
       const scrollFooter = document.body.offsetHeight - document.documentElement.clientHeight - 30;
