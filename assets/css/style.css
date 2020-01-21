@@ -180,6 +180,7 @@ body {
   font-family: 'BigCityGrotesquePro', serif;
   line-height: 1.5;
   color: var(--black);
+  background-color: var(--bg-black);
 }
 
 .app {
