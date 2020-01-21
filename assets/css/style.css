@@ -623,6 +623,7 @@ body {
   border-top: var(--border);
   border-bottom: var(--border);
   width: 100%;
+  overflow: hidden;
 }
 
 .results__nav-item-active {
