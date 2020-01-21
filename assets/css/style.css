@@ -1583,6 +1583,11 @@ body {
   .footer {
     margin-left: 0;
   }
+
+  .footer__info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 575px) {
