@@ -31,7 +31,9 @@
                 <a
                   class="nav__item"
                   :class="{ 'nav__item_active': currentLink === index }"
-                  :href="item.link">
+                  :href="item.link"
+                  onclick="showSidebar()"
+                >
                   {{ item.name }}
                 </a>
               </li
