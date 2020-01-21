@@ -533,9 +533,6 @@ body {
 .results__wrapper {
   overflow: hidden;
   max-width: 720px;
-}
-
-.results__container {
   cursor: url(../img/icons/drag.png) 16 9, ew-resize;
 }
 

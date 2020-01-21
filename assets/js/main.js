@@ -248,7 +248,7 @@ var results = new Vue({
       }
     },
     dragHandle() {
-      let el = document.querySelector('.results__container');
+      let el = document.querySelector('.results__wrapper');
       let mc = new Hammer(el, { touchAction: "pan-y" });
       mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0 }) );
       mc.on('panstart', () => {

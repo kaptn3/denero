@@ -155,24 +155,24 @@
                 </blockquote>
               </div>
             </div>
-          </div>
-          <div class="results__website macbook">
-            <div class="macbook__top">
-              <transition name="fade-img" mode="out-in">
-                <a
-                  v-for="(l, index) in 3"
-                  v-if="index === currentSlide"
-                  :href="'https://pandora90.ru/' + index"
-                  :key="index"
-                  target="_blank"
-                  class="results__website-screen macbook__screen"
-                >
-                  <img :src="'assets/img/website' + index + '.png'" alt="">
-                </a>
-              </transition>
+            <div class="results__website macbook">
+              <div class="macbook__top">
+                <transition name="fade-img" mode="out-in">
+                  <a
+                    v-for="(l, index) in 3"
+                    v-if="index === currentSlide"
+                    :href="'https://pandora90.ru/' + index"
+                    :key="index"
+                    target="_blank"
+                    class="results__website-screen macbook__screen"
+                  >
+                    <img :src="'assets/img/website' + index + '.png'" alt="">
+                  </a>
+                </transition>
+              </div>
             </div>
           </div>
-          <div class="results__nav" @mouseover="slide">
+          <div class="results__nav">
             <div
               class="results__nav-item-active"
               :style="`left: ${navPosition * 100 / 3}%; width: ${100 / 3}%`">
@@ -314,7 +314,7 @@
                 </transition>
               </div>
             </div>
-            <div class="screenshots__nav" @mouseover="slide">
+            <div class="screenshots__nav">
               <div
                 class="screenshots__nav-item-active"
                 :style="`left: ${currentSlide * (100 / 3)}%; width: ${100 / 3}%`"></div>
