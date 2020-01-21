@@ -316,15 +316,18 @@ body {
 }
 
 .sidebar__bar {
-  margin-top: 16px;
+  margin-top: 15px;
   display: none;
+  width: 35px;
+  height: 35px;
+  padding: 0;
 }
 
 .sidebar__bar span {
   position: relative;
   display: block;
   width: 28px;
-  height: 4px;
+  height: 2px;
   margin: 0 auto;
   background: #fff;
   -webkit-transition: all .275s;
@@ -348,9 +351,9 @@ body {
 }
 
 .sidebar__bar span:after {
-  -webkit-transform: translateY(-12px) translateX(0);
-      -ms-transform: translateY(-12px) translateX(0);
-          transform: translateY(-12px) translateX(0);
+  -webkit-transform: translateY(-10px) translateX(0);
+      -ms-transform: translateY(-10px) translateX(0);
+          transform: translateY(-10px) translateX(0);
 }
 
 .sidebar__bar span:before {
