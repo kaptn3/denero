@@ -328,13 +328,17 @@ var screenshots = new Vue({
 });
 
 const showSidebar = () => {
-  const nav = document.querySelector('.sidebar__nav');
-  const footer = document.querySelector('.sidebar__footer');
-  const inner = document.querySelector('.sidebar__inner');
+  const app = document.querySelector('.app');
+  const nav = app.querySelector('.sidebar__nav');
+  const footer = app.querySelector('.sidebar__footer');
+  const inner = app.querySelector('.sidebar__inner');
+  const height = window.innerHeight;
 
   nav.classList.toggle('sidebar__nav_show');
   footer.classList.toggle('sidebar__footer_show');
   inner.classList.toggle('sidebar__inner_show');
+  app.classList.toggle('app_locked');
+  inner.style.height = `${height}px`;
 }
 
 {
