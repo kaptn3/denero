@@ -249,7 +249,7 @@ var results = new Vue({
     },
     dragHandle() {
       let el = document.querySelector('.results__wrapper');
-      let mc = new Hammer(el);
+      let mc = new Hammer(el, { touchAction: "pan-y" });
       mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0 }) );
       mc.on('panstart', () => {
         this.lastCurrentSlide = this.currentSlide;
@@ -260,6 +260,10 @@ var results = new Vue({
         const x = this.lastCurrentSlide - (e.deltaX / el.clientWidth);
         this.currentSlide = Math.min((this.slidesCount), Math.max(-1, x));
       });
+      mc.on('panup pandown', (e) => {
+        e.preventDefault;
+        e.preventDefault();
+      })
       mc.on('panend', (e) => {
         const sign = Math.sign(e.deltaX);
         this.transitionDuration = '1s';
@@ -307,7 +311,7 @@ var screenshots = new Vue({
     this.left = document.querySelector('.main').offsetLeft + document.querySelector('.screenshots__nav').offsetLeft;
 
     let el = document.querySelector('.screenshots');
-    let mc = new Hammer(el);
+    let mc = new Hammer(el, { touchAction: "pan-y" });
     mc.on('swipeleft', (e) => {
       const next = this.currentSlide + 1;
       this.currentSlide = next > this.slidesCount - 1 ? 0 : next;
