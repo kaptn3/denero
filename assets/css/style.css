@@ -223,6 +223,16 @@ body {
   opacity: 0;
 }
 
+.fade-img-enter-active, .fade-img-leave-active {
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.fade-img-enter, .fade-img-leave-to {
+  opacity: 0;
+}
+
 .scroll-box::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
 }
