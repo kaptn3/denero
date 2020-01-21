@@ -535,15 +535,18 @@ body {
   max-width: 720px;
 }
 
+.results__container {
+  cursor: url(../img/icons/drag.png) 16 9, ew-resize;
+}
+
 .results__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-transition-timing-function: easy-in-out;
-       -o-transition-timing-function: easy-in-out;
-          transition-timing-function: easy-in-out;
-  cursor: url(../img/icons/drag.png) 16 9, ew-resize;
+  -webkit-transition-timing-function: easy-out-in;
+       -o-transition-timing-function: easy-out-in;
+          transition-timing-function: easy-out-in;
 }
 
 .results__item {
