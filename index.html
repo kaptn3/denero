@@ -31,9 +31,7 @@
                 <a
                   class="nav__item"
                   :class="{ 'nav__item_active': currentLink === index }"
-                  :href="item.link"
-                  onclick="showSidebar()"
-                >
+                  :href="item.link">
                   {{ item.name }}
                 </a>
               </li
@@ -42,7 +40,7 @@
           </nav>
           <footer class="sidebar__footer">
             <a class="sidebar__phone" href="tel:+78126003050">812 600 30 50</a>
-            <button class="btn sidebar__contact-btn">
+            <button class="btn">
               Связаться
             </button>
             <div class="footer__socials">

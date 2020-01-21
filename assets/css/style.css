@@ -453,7 +453,8 @@ body {
 }
 
 .main-header {
-  padding: 58px 0;
+  padding-top: 58px;
+  padding-bottom: 58px;
 }
 
 .main-header__title {
