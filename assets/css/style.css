@@ -1348,6 +1348,76 @@ body {
   margin-right: 21px;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .1);
+  z-index: 120;
+  display: none;
+  opacity: 0;
+  transition: .5s opacity;
+}
+
+.modal:hover {
+  cursor: url(../img/icons/close.svg) 14 14, ew-resize;
+}
+
+.modal:hover .modal__inner {
+  cursor: default;
+}
+
+.modal__inner {
+  width: 100%;
+  max-width: 576px;
+  padding: 58px 63px 46px 63px;
+  background-color: #fff;
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, .25);
+  position: relative;
+}
+
+.modal__title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 20px;
+  color: #3C3C3C;
+  margin-bottom: 40px;
+}
+
+.modal__link {
+  display: inline-block;
+}
+
+.modal__close {
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin-left: auto;
+  background: url(../img/icons/close.svg) no-repeat center;
+  background-size: contain;
+  padding: 0;
+  position: absolute;
+  z-index: 99;
+  top: 18px;
+  right: 20px;
+}
+
+.modal__small {
+  transform: translateY(-13px);
+}
+
+.modal__form-btn {
+  display: block;
+  margin: 15px auto 0 auto;
+}
+
 @media (max-width: 1230px) {
   .access__wrapper {
     height: 318px;

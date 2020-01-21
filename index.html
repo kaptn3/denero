@@ -376,7 +376,7 @@
               </a>
             </div>
           </div>
-          <button class="btn companies__get-access">Получить демо-доступ</button>
+          <button class="btn companies__get-access" onclick="toggleModal(true)">Получить демо-доступ</button>
         </div>
       </section>
       <section id="questions" class="main__section questions" v-cloak>
@@ -473,6 +473,7 @@
                 >
                   {{ contactError }} 
                 </span>
+              </label>
               <label for="message" class="form__label">
                 <textarea
                   v-model="message"
@@ -491,6 +492,7 @@
               <div class="form__send">
                 <button class="btn btn_black form__btn">Отправить</button>
                 <small class="form__small">Отправляя форму вы соглашаетесь на обработку <a class="form__link" href="#">персональных данных</a></small>
+              </div>
             </form>
           </div>
         </div>
@@ -522,6 +524,67 @@
         </div>
       </div>  
     </footer>
+    <div class="modal">
+      <div class="modal__inner">
+        <button class="modal__close" onclick="toggleModal()"></button>
+        <h3 class="modal__title">Получить демо-доступ в Darts</h3>
+        <form
+          @submit="checkForm"
+          action=""
+          method="post"
+          class="modal__form"
+          v-cloak
+        >
+          <label for="name" class="form__label">
+            <input
+              v-model="name"
+              name="name"
+              class="form__input"
+              type="text"
+            >
+            <span class="form__input-text">Ваше имя</span>
+            <span
+              v-if="nameError"
+              class="form__error"
+            >
+              {{ nameError }} 
+            </span>
+          </label>
+          <label for="contact" class="form__label">
+            <input
+              v-model="contact"
+              name="contact"
+              class="form__input"
+              type="text"
+            >
+            <span class="form__input-text">Email</span>
+            <span
+              v-if="contactError"
+              class="form__error"
+            >
+              {{ contactError }} 
+            </span>
+          </label>
+          <label for="website" class="form__label">
+            <input
+              v-model="website"
+              name="website"
+              class="form__input"
+              type="text"
+            >
+            <span class="form__input-text">Сайт</span>
+            <span
+              v-if="websiteError"
+              class="form__error"
+            >
+              {{ websiteError }} 
+            </span>
+          </label>
+          <small class="form__small modal__small">Отправляя форму вы соглашаетесь на обработку <a class="form__link modal__link" href="#">персональных данных</a></small>
+          <button class="btn btn_black form__btn modal__form-btn">Отправить</button>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="https://hammerjs.github.io/dist/hammer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

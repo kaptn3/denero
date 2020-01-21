@@ -119,6 +119,10 @@ var questions = new Vue({
   el: '.questions'
 });
 
+var placeholder = {
+  
+};
+
 var form = new Vue({
   el: '.form',
   data() {
@@ -140,25 +144,6 @@ var form = new Vue({
         this.contactType = 'tel';
       } else {
         this.contactType = 'email';
-      }
-    }
-  },
-  mounted() {
-    let labels = document.querySelectorAll('.form__label');
-    for (let i = 0; i < labels.length; i++) {
-      let placeholder = labels[i].querySelector('.form__input-text');
-      let input = labels[i].querySelector('.form__input');
-      if (placeholder && input) {
-        placeholder.addEventListener('click', () => {
-          placeholder.classList.add('form__input-text_focus');
-          input.focus();
-        });
-
-        input.addEventListener('blur', () => {
-          if (input.value.length === 0) {
-            placeholder.classList.remove('form__input-text_focus');
-          }
-        });
       }
     }
   },
@@ -327,6 +312,50 @@ var screenshots = new Vue({
   }
 });
 
+var modalForm = new Vue({
+  el: '.modal__form',
+  data() {
+    return {
+      contact: '',
+      name: '',
+      website: '',
+      nameError: '',
+      contactError: '',
+      websiteError: '',
+    }
+  },
+  methods: {
+    checkForm(e) {
+      this.nameError = '';
+      this.contactError = '';
+      this.websiteError = '';
+
+      let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!re.test(this.contact)) {
+        this.contactError = 'Что-то не то: проверьте правильность email';
+      }
+
+      if (!this.name) {
+        this.nameError = 'Введите имя';
+      }
+
+      if (!this.contact) {
+        this.contactError = 'Введите email';
+      }
+
+      if (!this.website) {
+        this.websiteError = 'Введите веб-сайт';
+      }
+
+      if (!this.nameError && !this.contactError && !this.websiteError) {
+        return true;
+      }
+
+      e.preventDefault();
+    }
+  }
+});
+
 const showSidebar = () => {
   const app = document.querySelector('.app');
   const nav = app.querySelector('.sidebar__nav');
@@ -341,7 +370,7 @@ const showSidebar = () => {
   inner.style.height = `${height}px`;
 }
 
-{
+const macbookSize = () => {
   const macbook = document.querySelector('.screenshots__macbook');
   macbook.style.height = `${macbook.clientWidth * 0.57}px`;
 
@@ -349,3 +378,45 @@ const showSidebar = () => {
     macbook.style.height = `${macbook.clientWidth * 0.57}px`;
   });
 }
+
+const initPlaceholder = () => {
+  let labels = document.querySelectorAll('.form__label');
+  for (let i = 0; i < labels.length; i++) {
+    let placeholder = labels[i].querySelector('.form__input-text');
+    let input = labels[i].querySelector('.form__input');
+    if (placeholder && input) {
+      placeholder.addEventListener('click', () => {
+        placeholder.classList.add('form__input-text_focus');
+        input.focus();
+      });
+      input.addEventListener('blur', () => {
+        if (input.value.length === 0) {
+          placeholder.classList.remove('form__input-text_focus');
+        }
+      });
+    }
+  }
+}
+
+const toggleModal = (open) => {
+  const modal = document.querySelector('.modal');
+  open ? modal.style.display = 'flex' : modal.style.opacity = '0';
+  setTimeout(() => {
+    open ? modal.style.opacity = '1' : modal.style.display = 'none';
+  }, 500);
+}
+
+const modalOut = () => {
+  const modal = document.querySelector('.modal');
+
+  modal.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+      toggleModal();
+    }
+  })
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initPlaceholder();
+  modalOut();
+});
