@@ -1287,8 +1287,8 @@ body {
 
   .sidebar__nav,
   .sidebar__footer {
-    transform: translateX(-210px);
-    transition: .3s transform;
+    transform: translateX(-107%);
+    transition: .5s transform;
   }
 
   .sidebar__nav_show,
