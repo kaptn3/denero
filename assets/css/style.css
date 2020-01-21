@@ -470,7 +470,7 @@ body {
 .results__box {
   display: flex;
   width: 100%;
-  transition-timing-function: easy-in-out;
+  transition-timing-function: easy-out-in;
   cursor: url(../img/icons/drag.png) 16 9, ew-resize;
 }
 

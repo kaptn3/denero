@@ -208,12 +208,25 @@ var results = new Vue({
       navWidth: 0,
       left: 0,
       draggble: false,
-      transitionDuration: '0s'
+      transitionDuration: '0s',
+      navPosition: 0
     };
   },
   mounted() {
-    const item = document.querySelectorAll('.results__item');
-    this.slidesCount = item.length;
+    const items = document.querySelectorAll('.results__item');
+    this.slidesCount = items.length;
+
+    const box = document.querySelector('.results__box');
+    const createSlide = (i) => {
+      const elm = items[i].cloneNode(true);
+      elm.classList.add('results__item_cloned');
+      return elm;
+    }
+    box.prepend(createSlide(items.length - 1));
+    box.append(createSlide(0));
+
+    box.addEventListener('transitionend', this.check);
+
     this.navWidth = document.querySelector('.results__nav-item-active').clientWidth;
     this.left = document.querySelector('.main').offsetLeft + document.querySelector('.results__nav').offsetLeft;
 
@@ -223,7 +236,11 @@ var results = new Vue({
     slide(e) {
       if ((e.screenX > this.left) && (e.screenX < (this.left + this.slidesCount * this.navWidth))) {
         const x = e.screenX - this.left;
+        this.transitionDuration = '1s';
         this.currentSlide = Math.abs(Math.floor(x / this.navWidth));
+        setTimeout(() => {
+          this.transitionDuration = '0s';
+        }, 1000);
       }
     },
     dragHandle() {
@@ -237,35 +254,28 @@ var results = new Vue({
       });
       mc.on('panleft panright', (e) => {
         const x = this.lastCurrentSlide - (e.deltaX / el.clientWidth);
-        this.currentSlide = Math.min((this.slidesCount - 1), Math.max(0, x));
+        this.currentSlide = Math.min((this.slidesCount), Math.max(-1, x));
       });
       mc.on('panend', (e) => {
         const sign = Math.sign(e.deltaX);
         this.transitionDuration = '1s';
         const round = Math.round(this.currentSlide - ((sign * 1) / 2));
-        this.currentSlide = Math.min((this.slidesCount - 1), Math.max(0, round));
-        setTimeout(() => {
-          this.transitionDuration = '0s';
-        }, 1000);
-      });
-      mc.on('panend', () => {
+        this.currentSlide = Math.min((this.slidesCount), Math.max(-1, round));
         this.draggble = false;
       });
       mc.on('tap', () => {
-        this.currentSlide = Math.min(this.slidesCount - 1, this.currentSlide + 1);
+        this.transitionDuration = '1s';
+        this.currentSlide = Math.min(this.slidesCount, this.currentSlide + 1);
       });
+    },
+    check() {
+      this.transitionDuration = '0s';
+      this.currentSlide = this.currentSlide === -1 ? this.slidesCount - 1 : (this.currentSlide === this.slidesCount ? 0 : this.currentSlide);
     }
   },
   watch: {
     currentSlide() {
-      if (!this.draggble) {
-        this.transitionDuration = '1s';
-        setTimeout(() => {
-          this.transitionDuration = '0s';
-        }, 1000);
-      } else {
-        this.transitionDuration = '0s';
-      }
+      this.navPosition = this.currentSlide === -1 ? this.slidesCount - 1 : (this.currentSlide === this.slidesCount ? 0 : this.currentSlide);
     }
   }
 });
@@ -294,14 +304,17 @@ var screenshots = new Vue({
 
     let el = document.querySelector('.screenshots');
     let mc = new Hammer(el);
-    mc.on('swipeleft', () => {
-      this.currentSlide = Math.min((this.slidesCount - 1), this.currentSlide + 1);
+    mc.on('swipeleft', (e) => {
+      const next = this.currentSlide + 1;
+      this.currentSlide = next > this.slidesCount - 1 ? 0 : next;
     });
     mc.on('swiperight', () => {
-      this.currentSlide = Math.max(0, this.currentSlide - 1);
+      const prev = this.currentSlide - 1;
+      this.currentSlide = prev < 0 ? this.slidesCount - 1 : prev;
     });
     mc.on('tap', () => {
-      this.currentSlide = Math.min(this.slidesCount - 1, this.currentSlide + 1);
+      const next = this.currentSlide + 1;
+      this.currentSlide = next > this.slidesCount - 1 ? 0 : next;
     })
   }
 });

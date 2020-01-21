@@ -112,7 +112,7 @@
         <div class="results__wrapper">
           <div
             class="results__box"
-            :style="`transform: translateX(-${currentSlide * 100}%); transition-duration: ${transitionDuration}`"
+            :style="`transform: translateX(-${(currentSlide + 1) * 100}%); transition-duration: ${transitionDuration}`"
           >
             <div class="results__item" v-for="i in 3">
               <div class="results__all-text">
@@ -137,7 +137,7 @@
                     <img src="assets/img/photo.png" alt="">
                   </div>
                   <div>
-                    <h4 class="results__quote-author-name">Рябов Валерий Анатольевич</h4>
+                    <h4 class="results__quote-author-name">{{ i }} Рябов Валерий Анатольевич</h4>
                     <p class="results__quote-author-job">Генеральный директор и сооснователь компании</p>
                   </div>
                 </div>
@@ -168,7 +168,7 @@
         <div class="results__nav" @mouseover="slide">
           <div
             class="results__nav-item-active"
-            :style="`left: ${currentSlide * (100 / 3)}%; width: ${100 / 3}%`">
+            :style="`left: ${navPosition * 100 / 3}%; width: ${100 / 3}%`">
           </div>
         </div>
       </section>
