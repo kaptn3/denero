@@ -1020,11 +1020,11 @@ body {
 }
 
 .numbers-other__item {
-  width: 23%;
+  width: 22%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-bottom: 30px;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 
 .numbers-other__title {
