@@ -245,10 +245,6 @@ var results = new Vue({
         const x = this.lastCurrentSlide - (e.deltaX / el.clientWidth);
         this.currentSlide = Math.min((this.slidesCount), Math.max(-1, x));
       });
-      mc.on('panup pandown', (e) => {
-        e.preventDefault;
-        e.preventDefault();
-      })
       mc.on('panend', (e) => {
         const sign = Math.sign(e.deltaX);
         this.transitionDuration = '1s';
@@ -419,7 +415,22 @@ const modalOut = () => {
   })
 }
 
+const macbookClick = () => {
+  const macbooks = document.querySelectorAll('.macbook__top');
+  for (let i = 0; i < macbooks.length; i++) {
+    let mc = new Hammer(macbooks[i], { touchAction: "pan-y" });
+    mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0 }) );
+    mc.on('panstart', () => {
+      macbooks[i].style.pointerEvents = 'none';
+    });
+    mc.on('panend', () => {
+      macbooks[i].style.pointerEvents = 'auto';
+    });
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initPlaceholder();
   modalOut();
+  macbookClick();
 });
