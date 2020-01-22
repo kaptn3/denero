@@ -198,7 +198,7 @@ body {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1410px;
   width: 100%;
   margin: 0 auto;
   padding: 55px 60px;
@@ -506,6 +506,15 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.competencies::after {
+  content: "";
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 30px;
 }
 
 .competencies__title {
@@ -668,7 +677,7 @@ body {
 .results__website {
   position: absolute;
   top: 147px;
-  left: 790px;
+  right: 65px;
   z-index: 99;
 }
 
@@ -1416,6 +1425,13 @@ body {
 .modal__form-btn {
   display: block;
   margin: 15px auto 0 auto;
+}
+
+@media (max-width: 1530px) {
+  .results__website {
+    right: auto;
+    left: 790px;
+  }
 }
 
 @media (max-width: 1230px) {
