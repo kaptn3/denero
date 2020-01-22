@@ -1683,6 +1683,25 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .main__header {
+    height: 100vh;
+  }
+
+  .main-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header__title {
+    margin-top: 170px;
+  }
+
+  .main-header__more {
+    margin-top: auto;
+    white-space: normal;
+  }
 }
 
 @media (max-width: 575px) {
