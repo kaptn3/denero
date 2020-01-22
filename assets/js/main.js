@@ -432,5 +432,6 @@ const macbookClick = () => {
 document.addEventListener('DOMContentLoaded', () => {
   initPlaceholder();
   modalOut();
+  macbookSize();
   macbookClick();
 });

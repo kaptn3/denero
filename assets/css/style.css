@@ -1554,6 +1554,11 @@ body {
     padding: 30px 35px;
   }
 
+  .companies__container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .competencies-section {
     padding-right: 0;
   }
@@ -1755,6 +1760,14 @@ body {
     margin-top: auto;
     white-space: normal;
   }
+
+  .companies__item {
+    padding-left: 20px;
+  }
+
+  .companies__item:last-child {
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1766,6 +1779,29 @@ body {
   .sidebar__inner,
   .container {
     padding: 20px 15px;
+  }
+
+  .companies__container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .companies__item {
+    padding-left: 0;
+  }
+
+  .companies__item:last-child {
+    padding-right: 0;
+  }
+
+  .companies__item img {
+    max-width: 80%;
+  }
+
+  .companies__container::after,
+  .companies__container::before {
+    top: 87px;
+    width: 60px;
   }
 
   .main-header__title {
