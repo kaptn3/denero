@@ -1535,6 +1535,7 @@ body {
 
   .numbers-other__item {
     width: 48%;
+    margin-right: 2%;
   }
 
   .footer__partners {
@@ -1559,6 +1560,11 @@ body {
 
   .competencies-section {
     padding-right: 0;
+  }
+  
+  .companies__container::after,
+  .companies__container::before {
+    top: 98px;
   }
 
   .numbers,
