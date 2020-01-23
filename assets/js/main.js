@@ -429,9 +429,17 @@ const macbookClick = () => {
   }
 }
 
+const heightIntroHandle = () => {
+  const header = document.querySelector('.main__header');
+  if (window.innerWidth < 768) {
+    header.style.height = `${window.innerHeight}px`;
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initPlaceholder();
   modalOut();
   macbookSize();
   macbookClick();
+  heightIntroHandle();
 });
