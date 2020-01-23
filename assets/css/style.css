@@ -540,8 +540,8 @@ body {
 
 .results__wrapper {
   overflow: hidden;
-  /* max-width: 100%;
-    margin-right: 429px; */
+  max-width: 100%;
+  margin-right: 429px;
   cursor: url(../img/icons/drag.png) 16 9, ew-resize;
 }
 
@@ -569,7 +569,7 @@ body {
 .results__all-text {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 31.3%;
+  width: 43%;
   margin-right: 50px;
 }
 
@@ -590,7 +590,7 @@ body {
 .results__quote {
   background: url(../img/icons/quotes.svg) no-repeat top left;
   padding-left: 36px;
-  width: 35%;
+  width: 50%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 50px;
@@ -1483,6 +1483,19 @@ body {
   .results__website {
     right: auto;
     left: 790px;
+  }
+
+  .results__wrapper {
+    max-width: 720px;
+    margin-right: auto;
+  }
+
+  .results__all-text {
+    width: 300px;
+  }
+
+  .results__quote {
+    width: 336px;
   }
 }
 
