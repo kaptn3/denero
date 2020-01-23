@@ -1446,6 +1446,7 @@ body {
 
 .modal__link {
   display: inline-block;
+  border-bottom: 1px solid #BCBCBC;
 }
 
 .modal__close {
@@ -1464,11 +1465,17 @@ body {
 
 .modal__small {
   transform: translateY(-13px);
+  font-weight: 300;
+  opacity: .5;
+  color: #323232;
 }
 
 .modal__form-btn {
   display: block;
+  font-size: 1rem;
   margin: 15px auto 0 auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 @media (max-width: 1530px) {
