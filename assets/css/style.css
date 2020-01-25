@@ -174,6 +174,7 @@ button {
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  --scroll-behavior: smooth;
 }
 
 body {
@@ -531,6 +532,49 @@ body {
   font-weight: 900;
 }
 
+.macbook {
+  width: 465px;
+  height: 268px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: url(../img/macbook.png) no-repeat center bottom;
+  background-size: contain;
+}
+
+.macbook__top {
+  height: 95%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #060914;
+  border-radius: 14px 14px 6px 6px;
+  overflow: hidden;
+  border: 2px solid #344248;
+  border-bottom: none;
+  padding: 3px 2px 3px 2px;
+  position: relative;
+}
+
+.macbook__screen {
+  border-radius: 14px 14px 6px 6px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.macbook__screen img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+}
+
 .results {
   width: 100%;
   overflow: hidden;
@@ -538,21 +582,14 @@ body {
   padding-bottom: 0;
 }
 
-.results__wrapper {
-  overflow: hidden;
-  max-width: 100%;
-  margin-right: 429px;
+.results__wrapper,
+.results__website-screen {
   cursor: url(../img/icons/drag.png) 16 9, ew-resize;
 }
 
 .results__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-transition-timing-function: ease-out-in;
-       -o-transition-timing-function: ease-out-in;
-          transition-timing-function: ease-out-in;
+  max-width: 100%;
+  margin-right: 429px;
 }
 
 .results__item {
@@ -650,6 +687,7 @@ body {
   border-bottom: var(--border);
   width: 100%;
   overflow: hidden;
+  transition: .3s height;
 }
 
 .results__nav-item-active {
@@ -660,10 +698,18 @@ body {
   position: absolute;
   top: -4px;
   left: 0;
-  -webkit-transition: .6s left;
-  -o-transition: .6s left;
-  transition: .6s left;
+  -webkit-transition: .3s height;
+  -o-transition: .3s height;
+  transition: .3s height;
   z-index: 2;
+}
+
+.results__nav:hover {
+  height: 16px;
+}
+
+.results__nav:hover .results__nav-item-active {
+  height: 16px;
 }
 
 .results__website {
@@ -671,54 +717,19 @@ body {
   top: 147px;
   right: 16px;
   z-index: 99;
+  cursor: url(../img/icons/drag.png) 16 9, ew-resize;
 }
 
 .results__website-screen {
   position: absolute;
   top: 0;
   left: 0;
+  animation-name: fade;
+  animation-duration: 1s;
+  display: none;
 }
 
-.macbook {
-  width: 465px;
-  height: 268px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background: url(../img/macbook.png) no-repeat center bottom;
-  background-size: contain;
-}
-
-.macbook__top {
-  height: 95%;
-  width: 80%;
-  margin: 0 auto;
-  background-color: #060914;
-  border-radius: 14px 14px 6px 6px;
-  overflow: hidden;
-  border: 2px solid #344248;
-  border-bottom: none;
-  padding: 3px 2px 3px 2px;
-  position: relative;
-}
-
-.macbook__screen {
-  border-radius: 14px 14px 6px 6px;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.macbook__screen img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.results__website-screen:first-child {
   display: block;
 }
 
@@ -1312,8 +1323,6 @@ body {
 
 .footer__map {
   height: 240px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 .footer__google-map {
@@ -1479,13 +1488,17 @@ body {
   padding-bottom: 11px;
 }
 
+.macbook__top {
+  cursor: url(../img/icons/drag.png) 16 9, ew-resize;
+}
+
 @media (max-width: 1530px) {
   .results__website {
     right: auto;
     left: 790px;
   }
 
-  .results__wrapper {
+  .results__box {
     max-width: 720px;
     margin-right: auto;
   }
@@ -1560,7 +1573,7 @@ body {
 
 @media (max-width: 991px) {
   .main__header {
-    padding: 25px 35px;
+    padding: 25px 0;
   }
 
   .container {
@@ -1800,7 +1813,6 @@ body {
     font-size: 14px;
   }
 
-  .main__header,
   .sidebar__inner,
   .container {
     padding: 20px 15px;
@@ -1882,5 +1894,14 @@ body {
   .competencies::after,
   .competencies__item {
     width: 100%;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0
+  } 
+  to {
+    opacity: 1
   }
 }

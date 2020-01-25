@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/flickity.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <title>Denero - Увеличиваем прибыль</title>
@@ -65,7 +66,9 @@
         <div class="container main-header">
           <h1 class="main-header__title">Увеличиваем прибыль</h1>
           <p class="main-header__small">Системно. С прозрачной отчётностью до денег.</p>
-          <p class="main-header__more">при&nbsp;помощи&nbsp;собственных&nbsp;технологий&nbsp;автоматизации размещения&nbsp;и&nbsp;аналитики&nbsp;интернет-рекламы и&nbsp;альтернативного&nbsp;подхода&nbsp;к&nbsp;маркетингу&nbsp;и&nbsp;разработке</p> 
+          <p class="main-header__more">
+            при помощи собственных технологий&nbsp;автоматизации размещения и аналитики интернет-рекламы и&nbsp;альтернативного подхода к маркетингу и разработке
+          </p> 
         </div> 
       </header>
       <section class="main__section main__section_grey competencies-section">
@@ -110,15 +113,12 @@
           </div>
         </div>
       </section>
-      <section id="results" class="main__section results" v-cloak>
+      <section id="results" class="main__section results">
         <div class="container results__container">
           <h2 class="title_h1 results__header">Результаты</h2>
           <div class="results__wrapper">
-            <div
-              class="results__box"
-              :style="`transform: translateX(-${(currentSlide + 1) * 100}%); transition-duration: ${transitionDuration}`"
-            >
-              <div class="results__item" v-for="i in 3">
+            <div class="results__box">
+              <div class="results__item">
                 <div class="results__all-text">
                   <h3 class="results__title">Партнёр</h3>
                   <p class="results__text">
@@ -141,7 +141,73 @@
                       <img src="assets/img/photo.png" alt="">
                     </div>
                     <div>
-                      <h4 class="results__quote-author-name">{{ i }} Рябов Валерий Анатольевич</h4>
+                      <h4 class="results__quote-author-name">1 Рябов Валерий Анатольевич</h4>
+                      <p class="results__quote-author-job">Генеральный директор и сооснователь компании</p>
+                    </div>
+                  </div>
+                  <a class="results__quote-link" href="">
+                    <img src="assets/img/vcru-logo.png" alt="">
+                    <span>Читать кейс на vc.ru</span>
+                  </a>
+                </blockquote>
+              </div>
+              <div class="results__item">
+                <div class="results__all-text">
+                  <h3 class="results__title">Партнёр</h3>
+                  <p class="results__text">
+                    Pandora — технологический лидер в производстве систем автобезопасности. Компания имеет более 500 дилерских точек в России, СНГ и Европе.
+                  </p>
+                  <h3 class="results__title">Результат</h3>
+                  <p class="results__text">Помогли продать <strong class="results__text_bold">20 000 устройств на 250 млн. ₽</strong> за квартал.</p>
+                  <h3 class="results__title">Срок сотрудничества</h3>
+                  <p class="results__text">14 лет</p>
+                </div>
+                <blockquote class="results__quote">
+                  <p>
+                    Думаю, при таком глубоком погружении, квалификации, творчестве и желании работать успех был неизбежен.
+                  </p>
+                  <p>
+                    Наши вложения в эту рекламную программу более чем окупились.
+                  </p>
+                  <div class="results__quote-author">
+                    <div class="results__quote-author-img">
+                      <img src="assets/img/photo.png" alt="">
+                    </div>
+                    <div>
+                      <h4 class="results__quote-author-name">2 Рябов Валерий Анатольевич</h4>
+                      <p class="results__quote-author-job">Генеральный директор и сооснователь компании</p>
+                    </div>
+                  </div>
+                  <a class="results__quote-link" href="">
+                    <img src="assets/img/vcru-logo.png" alt="">
+                    <span>Читать кейс на vc.ru</span>
+                  </a>
+                </blockquote>
+              </div>
+              <div class="results__item">
+                <div class="results__all-text">
+                  <h3 class="results__title">Партнёр</h3>
+                  <p class="results__text">
+                    Pandora — технологический лидер в производстве систем автобезопасности. Компания имеет более 500 дилерских точек в России, СНГ и Европе.
+                  </p>
+                  <h3 class="results__title">Результат</h3>
+                  <p class="results__text">Помогли продать <strong class="results__text_bold">20 000 устройств на 250 млн. ₽</strong> за квартал.</p>
+                  <h3 class="results__title">Срок сотрудничества</h3>
+                  <p class="results__text">14 лет</p>
+                </div>
+                <blockquote class="results__quote">
+                  <p>
+                    Думаю, при таком глубоком погружении, квалификации, творчестве и желании работать успех был неизбежен.
+                  </p>
+                  <p>
+                    Наши вложения в эту рекламную программу более чем окупились.
+                  </p>
+                  <div class="results__quote-author">
+                    <div class="results__quote-author-img">
+                      <img src="assets/img/photo.png" alt="">
+                    </div>
+                    <div>
+                      <h4 class="results__quote-author-name">3 Рябов Валерий Анатольевич</h4>
                       <p class="results__quote-author-job">Генеральный директор и сооснователь компании</p>
                     </div>
                   </div>
@@ -154,25 +220,34 @@
             </div>
             <div class="results__website macbook">
               <div class="macbook__top">
-                <transition name="fade-img" mode="out-in">
-                  <a
-                    v-for="(l, index) in 3"
-                    v-if="index === currentSlide"
-                    :href="'https://pandora90.ru/' + index"
-                    :key="index"
-                    target="_blank"
-                    class="results__website-screen macbook__screen"
-                  >
-                    <img :src="'assets/img/website' + index + '.png'" alt="">
-                  </a>
-                </transition>
+                <a
+                  href="https://pandora90.ru"
+                  target="_blank"
+                  class="results__website-screen macbook__screen"
+                >
+                  <img src="assets/img/website0.png" alt="">
+                </a>
+                <a
+                  href="https://pandora90.ru1"
+                  target="_blank"
+                  class="results__website-screen macbook__screen"
+                >
+                  <img src="assets/img/website1.png" alt="">
+                </a>
+                <a
+                  href="https://pandora90.ru2"
+                  target="_blank"
+                  class="results__website-screen macbook__screen"
+                >
+                  <img src="assets/img/website2.png" alt="">
+                </a>
               </div>
             </div>
           </div>
           <div class="results__nav">
             <div
               class="results__nav-item-active"
-              :style="`left: ${navPosition * 100 / 3}%; width: ${100 / 3}%`">
+              style="width: 33.33%">
             </div>
           </div>
         </div>
@@ -265,56 +340,55 @@
               </div>
             </div>
           </div>
-          <div class="screenshots" v-cloak>
+          <div class="screenshots">
             <div
               class="screenshots__box"
             >
               <div class="screenshots__item">
                 <div class="screenshots__macbook macbook">
                   <div class="macbook__top">
-                    <transition name="fade" mode="out-in">
                       <a
-                        v-for="(l, index) in 3"
-                        v-if="index === currentSlide"
-                        :href="'https://pandora90.ru/' + index"
-                        :key="index"
+                        href="https://pandora90.ru/0"
                         target="_blank"
                         class="results__website-screen macbook__screen"
                       >
-                        <img :src="'assets/img/website' + index + '.png'" alt="">
+                        <img src="assets/img/website0.png" alt="">
                       </a>
-                    </transition>
+                      <a
+                        href="https://pandora90.ru/1"
+                        target="_blank"
+                        class="results__website-screen macbook__screen"
+                      >
+                        <img src="assets/img/website1.png" alt="">
+                      </a>
+                      <a
+                        href="https://pandora90.ru/2"
+                        target="_blank"
+                        class="results__website-screen macbook__screen"
+                      >
+                        <img src="assets/img/website2.png" alt="">
+                      </a>
                   </div>
                 </div>
-                <transition name="fade" mode="out-in">
                   <h4
-                    v-if="0 === currentSlide"
-                    :key="0"
                     class="screenshots__title"
                   >
                     Просмотр списка кампаний и настроек проекта.
                   </h4>
                   <h4
-                    v-if="1 === currentSlide"
-                    :key="1"
                     class="screenshots__title"
                   >
                     Lorem ipsum dolor sit amet consectetur 
                   </h4>
                   <h4
-                    v-if="2 === currentSlide"
-                    :key="2"
                     class="screenshots__title"
                   >
                   Modi perspiciatis quasi magnam
                   </h4>
-                </transition>
               </div>
             </div>
             <div class="screenshots__nav">
-              <div
-                class="screenshots__nav-item-active"
-                :style="`left: ${currentSlide * (100 / 3)}%; width: ${100 / 3}%`"></div>
+              <div class="screenshots__nav-item-active" style="width: 33.33%;"></div>
             </div>
           </div>
         </div>
@@ -488,7 +562,7 @@
               </label>
               <div class="form__send">
                 <button class="btn btn_black form__btn">Отправить</button>
-                <small class="form__small">Отправляя форму вы соглашаетесь на обработку <a class="form__link" href="#">персональных данных</a></small>
+                <small class="form__small">Отправляя форму вы соглашаетесь на обработку <a class="form__link" href="assets/privacy_policy.pdf" target="_blank">персональных данных</a></small>
               </div>
             </form>
           </div>
@@ -497,7 +571,6 @@
     </main>
     <footer class="footer">
       <div class="footer__map">
-        <iframe class="footer__google-map" height="240" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7839701855212!2d30.31936761604302!3d59.935726781875154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057be74167%3A0x23b0d80c5d1b6089!2sNevsky%20Ave%2C%2019%2C%205%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1579021383866!5m2!1sen!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
       <div class="container footer__bottom">
         <div class="footer__info">
@@ -577,7 +650,7 @@
               {{ websiteError }} 
             </span>
           </label>
-          <small class="form__small modal__small">Отправляя форму вы соглашаетесь на обработку <a class="modal__link" href="#">персональных данных</a></small>
+          <small class="form__small modal__small">Отправляя форму вы соглашаетесь на обработку <a class="modal__link" href="assets/privacy_policy.pdf" target="_blank">персональных данных</a></small>
           <button class="btn btn_black form__btn modal__form-btn">Отправить</button>
         </form>
       </div>
@@ -585,6 +658,14 @@
   </div>
   <script src="https://hammerjs.github.io/dist/hammer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="assets/js/smoothscroll.min.js"></script>
+  <script src="assets/js/anchor.min.js"></script>
+
+  <script src="https://npmcdn.com/flickity@2.2.1/dist/flickity.pkgd.js"></script>
+  <script src="assets/js/slider.js"></script>
+
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAdC9Vik5vgoUHrQ76b053AqFVhQ4gn2k&callback=initMap"></script>
 </body>
 </html>
